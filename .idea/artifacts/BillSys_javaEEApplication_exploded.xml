@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="BillSys:javaEEApplication exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BillSys_javaEEApplication_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BillSys/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

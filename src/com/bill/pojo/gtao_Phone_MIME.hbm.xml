@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.bill.pojo.gtao_Phone_MIME">
+        <id name="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="department" type="java.lang.String"/>
+        <property name="ipregex" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

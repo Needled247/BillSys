@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BillSys:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BillSys_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BillSys/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BillSys" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="hibernate-4.1.1" />
+          <element id="library" level="project" name="struts2-2.3.7" />
+          <element id="library" level="project" name="sqljdbc4" />
+          <element id="library" level="project" name="poi-excelant-3.9-20121203" />
+          <element id="library" level="project" name="javax.servlet.jsp.jstl-1.2.1" />
+          <element id="library" level="project" name="ojdbc14" />
+          <element id="library" level="project" name="ganymed-ssh2-build210" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

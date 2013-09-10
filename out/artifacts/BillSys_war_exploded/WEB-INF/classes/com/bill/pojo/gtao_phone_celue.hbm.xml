@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.bill.pojo.gtao_phone_celue">
+        <id name="ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="SPROFILE" type="java.lang.String"/>
+        <property name="SPREFIX" type="java.lang.String"/>
+        <property name="RATESTIME1" type="java.lang.String"/>
+        <property name="RATES1" type="java.lang.String"/>
+        <property name="RATESTIME2" type="java.lang.String"/>
+        <property name="RATES2" type="java.lang.String"/>
+        <property name="RATESTIME3" type="java.lang.String"/>
+        <property name="RATES3" type="java.lang.String"/>
+        <property name="OTHERFEE" type="java.lang.String"/>
+        <property name="SPECIALTIMEBEGIN1" type="java.lang.String"/>
+        <property name="SPECIALTIMEEND1" type="java.lang.String"/>
+        <property name="SPECIALTIMEBEGIN2" type="java.lang.String"/>
+        <property name="SPECIALTIMEEND2" type="java.lang.String"/>
+        <property name="SPECIALTIMEBEGIN3" type="java.lang.String"/>
+        <property name="SPECIALTIMEEND3" type="java.lang.String"/>
+        <property name="SPECIALTIMEFEE1" type="java.lang.String"/>
+        <property name="SPECIALTIMEFEE2" type="java.lang.String"/>
+        <property name="SPECIALTIMEFEE3" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <include file="struts-default.xml"/>
+    <constant name="struts.multipart.maxSize" value="10701096"/>
+    <package name="struts_upload" namespace="/" extends="struts-default">
+        <action name="ExcelUpload" class="com.bill.action.ExcelUpload">
+        </action>
+    </package>
+    <package name="struts2_login" extends="struts-default" namespace="/">
+        <action name="checkLogin" class="com.bill.action.loginCheck">
+            <result type="stream">
+                <param name="contentType">text/html</param>
+                <param name="inputName">inputStream</param>
+            </result>
+        </action>
+    </package>
+    <package name="edit" extends="struts-default" namespace="/">
+        <action name="DetailEdit" class="com.bill.action.DetailEdit">
+        </action>
+        <action name="SaleDetailEdit"  class="com.bill.action.SaleDetailEdit">
+        </action>
+        <action name="NumManage"  class="com.bill.action.NumManage">
+        </action>
+        <action name="EditNumInfo"  class="com.bill.action.EditNumInfo">
+        </action>
+        <action name="StrategyManage" class="com.bill.action.StrategyManage">
+        </action>
+        <action name="UserGroup" class="com.bill.action.UserGroup">
+        </action>
+        <action name="EditUser" class="com.bill.action.EditUser">
+        </action>
+        <action name="CallHistory" class="com.bill.action.CallHistory">
+        </action>
+        <action name="UserCallAction" class="com.bill.action.UserCallAction"/>
+        <action name="ChangePassAction" class="com.bill.action.ChangePassAction"/>
+        <action name="BillingPrintAction" class="com.bill.action.BillingPrintAction"/>
+    </package>
+</struts>

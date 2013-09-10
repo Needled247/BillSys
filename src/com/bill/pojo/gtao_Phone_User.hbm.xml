@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.bill.pojo.gtao_Phone_User">
+        <id name="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="userid" type="java.lang.String"/>
+        <property name="mobile" type="java.lang.String"/>
+        <property name="phoneIp" type="java.lang.String"/>
+        <property name="vlan" type="java.lang.String"/>
+        <property name="longNum" type="java.lang.String"/>
+        <property name="shortNum" type="java.lang.String"/>
+        <property name="itime" type="java.lang.String"/>
+        <property name="lastUpd" type="java.lang.String"/>
+        <property name="Tactics" type="java.lang.String"/>
+        <property name="status" type="java.lang.String"/>
+        <property name="email" type="java.lang.String"/>
+        <property name="balance" type="java.lang.String"/>
+        <property name="stored" type="java.lang.String"/>
+        <property name="MaturityTime" type="java.lang.String"/>
+        <property name="tbl" type="java.lang.String"/>
+        <property name="gate" type="java.lang.String"/>
+        <property name="protocal" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

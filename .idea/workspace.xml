@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/web/CreateApply.jsp" line="124" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" line="1222" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" line="1435" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76c42f42-901c-47aa-96ed-56b2e921336e" name="Default" comment="" />
+    <ignored path="BillSys.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/struts.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376898089466" ignored="false" />
+    <file path="/loginCheck.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376558938548" ignored="false" />
+    <file path="/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377850738626" ignored="false" />
+    <file path="/BillSys_User.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1367826526164" ignored="false" />
+    <file path="/fragment.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376617411247" ignored="false" />
+    <file path="/BillSys_DAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1367832803474" ignored="false" />
+    <file path="/UserDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373644086367" ignored="false" />
+    <file path="/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374040115380" ignored="false" />
+    <file path="/login.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376797897934" ignored="false" />
+    <file path="/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206911386" ignored="false" />
+    <file path="/BillSys_User.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370623812768" ignored="false" />
+    <file path="/loginCheck-validation.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1367985947747" ignored="false" />
+    <file path="/charisma-app.css" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368087249984" ignored="false" />
+    <file path="$PROJECT_DIR$/../ip_phone/web/WEB-INF/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368426877825" ignored="false" />
+    <file path="$PROJECT_DIR$/../ip_phone/src/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368426883234" ignored="false" />
+    <file path="$PROJECT_DIR$/../ip_phone/src/Main.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368426883707" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/src/com/gtao/Servlet/phoneAdd.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368427177956" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/freeRegister.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368688988869" ignored="false" />
+    <file path="/freeRegister.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368688894634" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/javascript/freeRigister.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368690491711" ignored="false" />
+    <file path="/freeRigister.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368690352822" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1368688633599" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/allSale.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369189151267" ignored="false" />
+    <file path="/allSale.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369189149625" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/allFree.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369189187103" ignored="false" />
+    <file path="/allFree.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369189185881" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/WEB-INF/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369193643492" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/web/WEB-INF/urlrewrite.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369292321553" ignored="false" />
+    <file path="/urlrewrite.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369193558362" ignored="false" />
+    <file path="/newApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376287520172" ignored="false" />
+    <file path="/charisma.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369210382307" ignored="false" />
+    <file path="/NewApply.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369296522000" ignored="false" />
+    <file path="/gtao_phone_view.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372645570919" ignored="false" />
+    <file path="/gtao_phone_view.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369285798710" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/src/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369291949856" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/src/com/gtao/Servlet/IndexFree.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369634791633" ignored="false" />
+    <file path="/BillSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376728723155" ignored="false" />
+    <file path="/BillSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377670664943" ignored="false" />
+    <file path="/ApplyAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369367365870" ignored="false" />
+    <file path="/ApplyTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369377856044" ignored="false" />
+    <file path="/ApplyToolAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369378098021" ignored="false" />
+    <file path="/ViewApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376718148919" ignored="false" />
+    <file path="/BillSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376274768270" ignored="false" />
+    <file path="/DetailEdit.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376794049428" ignored="false" />
+    <file path="/editApplyInfo.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376288268742" ignored="false" />
+    <file path="/IndexFree.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369634789791" ignored="false" />
+    <file path="/gtao_Phone_MIME.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369639567467" ignored="false" />
+    <file path="/newSaleApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376287543837" ignored="false" />
+    <file path="/gtao_Phone_bc_sale.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374044008795" ignored="false" />
+    <file path="/gtao_Phone_bc_sale.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374044023130" ignored="false" />
+    <file path="/Success.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376635359201" ignored="false" />
+    <file path="/Error.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373621114371" ignored="false" />
+    <file path="/ViewSaleApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376294974344" ignored="false" />
+    <file path="/editSaleApplyInfo.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376294994238" ignored="false" />
+    <file path="/SaleDetailEdit.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376794233881" ignored="false" />
+    <file path="/gtao_Phone_User.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373703351718" ignored="false" />
+    <file path="/gtao_Phone_User.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373703372243" ignored="false" />
+    <file path="/sSuccess.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373618829955" ignored="false" />
+    <file path="/ViewUser.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375430958615" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/ip_phone/src/com/gtao/Servlet/freeRegister.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369904105198" ignored="false" />
+    <file path="/freeRegister.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369904079214" ignored="false" />
+    <file path="/NumManage.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375430896636" ignored="false" />
+    <file path="/NumManage.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375341012171" ignored="false" />
+    <file path="/NumManage.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374224041098" ignored="false" />
+    <file path="/EditUser.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376297382840" ignored="false" />
+    <file path="/a.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372488756478" ignored="false" />
+    <file path="/sample.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372150235290" ignored="false" />
+    <file path="/test.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370249274574" ignored="false" />
+    <file path="/EditFreeNum.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373944877309" ignored="false" />
+    <file path="/EditNumInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373945820054" ignored="false" />
+    <file path="$PROJECT_DIR$/../ip_phone_new/src/com/gtao/Servlet/saleRegister.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370325445749" ignored="false" />
+    <file path="/eSuccess.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376635411525" ignored="false" />
+    <file path="/EditSaleNum.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374285990347" ignored="false" />
+    <file path="/gtao_Bill_Info.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370404364812" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506855328" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/Servlet/SaveReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506063649" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/pojo/SpeedTestReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370504071065" ignored="false" />
+    <file path="/SpeedTestReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370504070757" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/pojo/SpeedTestReport.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370504216855" ignored="false" />
+    <file path="/SpeedTestReport.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506863946" ignored="false" />
+    <file path="/SaveReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506678866" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/web/js/download.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506229236" ignored="false" />
+    <file path="/download.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506226764" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/web/WEB-INF/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506484684" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/com/gtao/Servlet/SaveReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506678866" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/com/gtao/com/gtao/pojo/SpeedTestReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506467374" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/com/gtao/pojo/SpeedTestReport.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506536065" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/NetTest/src/com/gtao/pojo/SpeedTestReport.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370506863946" ignored="false" />
+    <file path="/dowload_module_sale.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370590478048" ignored="false" />
+    <file path="/ExcelUpload.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370680312209" ignored="false" />
+    <file path="/InsertExl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370664693199" ignored="false" />
+    <file path="/InsertExlTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374287794611" ignored="false" />
+    <file path="/gtao_Phone_Strategy.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371371702150" ignored="false" />
+    <file path="/gtao_Phone_Strategy.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371371776370" ignored="false" />
+    <file path="/StrategyManage.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375430911840" ignored="false" />
+    <file path="/gtao_phone_celue.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371449393547" ignored="false" />
+    <file path="/gtao_phone_celue.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371449551174" ignored="false" />
+    <file path="/StrategyManage.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371804541596" ignored="false" />
+    <file path="/StrategyManage.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371805043440" ignored="false" />
+    <file path="/gtao_phone_profile.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371458517264" ignored="false" />
+    <file path="/gtao_phone_profile.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371458564139" ignored="false" />
+    <file path="/EditStrategyInfo.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376039269847" ignored="false" />
+    <file path="/StraSucc.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371792043624" ignored="false" />
+    <file path="/NewStrategyInfo.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373621163761" ignored="false" />
+    <file path="/gtao_phone_group.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371697915603" ignored="false" />
+    <file path="/gtao_phone_group.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371697986115" ignored="false" />
+    <file path="/UserGroup.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375430930579" ignored="false" />
+    <file path="/UserGroup.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1371800508046" ignored="false" />
+    <file path="/UserGroup.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372227190043" ignored="false" />
+    <file path="/NewUserGroup.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373621190768" ignored="false" />
+    <file path="/EditUser.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376297396408" ignored="false" />
+    <file path="/EditUser.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376710586978" ignored="false" />
+    <file path="/ViewUser.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372215215945" ignored="false" />
+    <file path="/CallHistory.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375431425894" ignored="false" />
+    <file path="/tbl_billInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372298798495" ignored="false" />
+    <file path="/CallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373095887745" ignored="false" />
+    <file path="/CallHistory.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374300864034" ignored="false" />
+    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1378775684310" ignored="false" />
+    <file path="/test1.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373009916765" ignored="false" />
+    <file path="/test2.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373006243222" ignored="false" />
+    <file path="/Validate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376559241955" ignored="false" />
+    <file path="/ViewHistoryDetail.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373354187732" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/WEB-INF/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206129360" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/login.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373211751860" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/js/validate.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206279505" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206443054" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/struts.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375892379147" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374600117969" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375893184683" ignored="false" />
+    <file path="/FileSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375893183903" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/filesys_user.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207268942" ignored="false" />
+    <file path="/filesys_user.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207406620" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_User.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207411722" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_User.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207453245" ignored="false" />
+    <file path="/gj_User.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207451924" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action/checkLogin.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207610613" ignored="false" />
+    <file path="/checkLogin.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207609348" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSYS.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207716373" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSys.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207724869" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894759376" ignored="false" />
+    <file path="/FileSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894757968" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375114260329" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/head.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375114022196" ignored="false" />
+    <file path="/head.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376548612819" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/menu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375111479815" ignored="false" />
+    <file path="/menu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376898152763" ignored="false" />
+    <file path="/radius.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373354375684" ignored="false" />
+    <file path="/TBL_USERSINFO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373360302811" ignored="false" />
+    <file path="/sshLogin.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373514328997" ignored="false" />
+    <file path="/SshTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374732415117" ignored="false" />
+    <file path="/uSuccess.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373618863612" ignored="false" />
+    <file path="/logout.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376548624549" ignored="false" />
+    <file path="/createAccount.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375431707372" ignored="false" />
+    <file path="/CreateSaleApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373955684352" ignored="false" />
+    <file path="/CreateApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376299317516" ignored="false" />
+    <file path="/CreateApply.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376299395615" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/NewFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374599862188" ignored="false" />
+    <file path="/NewFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374080063509" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/js/charisma.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374079510232" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/js/jquery.chosen.min.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374080148041" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/xnum_fix.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374162409004" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action/testAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374166629107" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/XNUM_FIX.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374162409004" ignored="false" />
+    <file path="/xnum_fix.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374162464935" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/xnum_fix.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374162464935" ignored="false" />
+    <file path="/testAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374166628570" ignored="false" />
+    <file path="/exportCallHistory.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375427446553" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/js/fileSys/NewFileValidate.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374600242913" ignored="false" />
+    <file path="/NewFileValidate.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374600164208" ignored="false" />
+    <file path="/UserCalledPage.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376284910669" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/js/fileSys/index.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374860351112" ignored="false" />
+    <file path="/index.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374859596314" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action/ReleasedAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375892511560" ignored="false" />
+    <file path="/ReleasedAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374861279899" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_file_company.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858885587" ignored="false" />
+    <file path="/gj_file_company.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858881094" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_file_company.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858901614" ignored="false" />
+    <file path="/gj_file_company.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858901090" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_file_plant.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858917826" ignored="false" />
+    <file path="/gj_file_plant.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858913631" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_file_plant.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858931233" ignored="false" />
+    <file path="/gj_file_plant.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858929683" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/FileSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374859058532" ignored="false" />
+    <file path="/FileSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374859057689" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/SearchFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375895361430" ignored="false" />
+    <file path="/SearchFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375895359613" ignored="false" />
+    <file path="/UserCalledPage.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375516949179" ignored="false" />
+    <file path="/UserCallAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376276473410" ignored="false" />
+    <file path="/exportUserCalled.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375427925580" ignored="false" />
+    <file path="/exportDateHistory.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375427439459" ignored="false" />
+    <file path="/BillingManager.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376119053345" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/js/fileSys/SearchFile.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375893047489" ignored="false" />
+    <file path="/SearchFile.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375893045530" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action/SearchFileAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894856516" ignored="false" />
+    <file path="/SearchFileAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894837645" ignored="false" />
+    <file path="/UserValidate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376798242407" ignored="false" />
+    <file path="/UserHead.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376549554955" ignored="false" />
+    <file path="/UserMenu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376636348235" ignored="false" />
+    <file path="/UserCallHistory.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376633910749" ignored="false" />
+    <file path="/UserCallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376619379711" ignored="false" />
+    <file path="/UserBusiness.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376636793431" ignored="false" />
+    <file path="/ChangePass.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376798460305" ignored="false" />
+    <file path="/ChangePass.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376717665223" ignored="false" />
+    <file path="/ChangePassAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376644415406" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/EditFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376677504742" ignored="false" />
+    <file path="/EditFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376677504342" ignored="false" />
+    <file path="/BillingExport.jsp.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376727263599" ignored="false" />
+    <file path="/printBilling.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376900679326" ignored="false" />
+    <file path="/BillingPrintAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376901839671" ignored="false" />
+    <file path="/BillingExport.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376898598650" ignored="false" />
+    <file path="$PROJECT_DIR$/../test/web/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377851332824" ignored="false" />
+    <file path="$PROJECT_DIR$/../test/web/css/carousel.css" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377850733525" ignored="false" />
+    <file path="$PROJECT_DIR$/../test/web/js/holder.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377850825396" ignored="false" />
+    <file path="$PROJECT_DIR$/../test/web/js/html5shiv.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377851274585" ignored="false" />
+    <file path="/TimerTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1378795080792" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel class="com.bill.dao.BillSysDAOImpl" />
+    <rightPanel />
+    <splitter proportion="0.60582525" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/BillSys$Tomcat_7_0.coverage" NAME="Tomcat 7.0 Coverage Results" MODIFIED="1375254366466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java" />
+    </disable_hints>
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java" line="245" class="com.bill.action.EditUser" package="com.bill.action">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java" line="236" class="com.bill.action.EditUser" package="com.bill.action">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="BillSys" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BillingManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/tool/BillingManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="41" selection-start="488" selection-end="488" vertical-scroll-proportion="0.22556391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/web/BillingExport.jsp.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/UserValidate.jsp" />
+        <option value="$PROJECT_DIR$/web/ChangePass.jsp" />
+        <option value="$PROJECT_DIR$/web/js/UserCalledPage.js" />
+        <option value="$PROJECT_DIR$/web/UserCalledPage.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/web/menu.jsp" />
+        <option value="$PROJECT_DIR$/web/BillingExport.jsp" />
+        <option value="$PROJECT_DIR$/web/js/printBilling.js" />
+        <option value="$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/tool/TimerTool.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issues</id>
+          </State>
+          <State>
+            <id>FreeMarker inspections</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Imports</id>
+          </State>
+          <State>
+            <id>Inheritance issues</id>
+          </State>
+          <State>
+            <id>JBoss Seam issues</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>Logging issues</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="false" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="Persistence.ERD.GroupObjects" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="Persistence.ERD.MergeEmbedded" value="false" />
+    <property name="Persistence.ERD.SimpleMode" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="Persistence.ERD.MergeInherited" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bill.action" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\BillSys\web\img" />
+      <recent name="C:\Users\HP\Desktop\BillSys\web" />
+      <recent name="C:\Users\HP\Desktop\BillSys\web\js" />
+      <recent name="C:\Users\HP\Desktop\BillSys\src" />
+      <recent name="C:\Users\HP\Desktop\BillSys\src\com\bill\pojo" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.bill.pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\BillSys\web\js" />
+      <recent name="C:\Users\HP\Desktop\BillSys\src\com\bill\pojo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local">
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="JBoss" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local">
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JettyConfiguration" factoryName="Local">
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="configFiles">
+            <list>
+              <JettyConfigFile>
+                <option name="active" value="true" />
+                <option name="path" value="etc\jetty-jmx.xml" />
+              </JettyConfigFile>
+            </list>
+          </option>
+        </data>
+      </server-settings>
+      <predefined_log_file id="Jetty" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Glassfish 4.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Glassfish 4.0.0" show_console_on_std_out="true" show_console_on_std_err="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="BillSys:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="BillSys:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="COMMON_VM_ARGUMENTS" value="-Xms256m -Xmx512m " />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="BillSys:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_6_0_BillSys" />
+        <option name="HTTP_PORT" value="8008" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61425" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="BillSys:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Glassfish Server.Glassfish 4.0.0" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76c42f42-901c-47aa-96ed-56b2e921336e" name="Default" comment="" />
+      <created>1367824525218</created>
+      <updated>1367824525218</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34083045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.49403748" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.64906305" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.64906305" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5093697" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3615917" sideWeight="0.5159091" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.22146508" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67291313" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19166666" sideWeight="0.22827938" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.2044293" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6712095" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19131097" sideWeight="0.67128026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35986158" sideWeight="0.47878787" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.36115843" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.60306644" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_13/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="16" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.33128834" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="125" selection-start="3010" selection-end="3010" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/loginCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="46" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.058027077" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/UserCalledPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="1074" selection-end="1080" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/UserCallAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="41" selection-start="5242" selection-end="5242" vertical-scroll-proportion="0.05952381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/CallHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="623" selection-end="623" vertical-scroll-proportion="0.44117647" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="79" selection-start="617" selection-end="617" vertical-scroll-proportion="0.05514706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Validate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1601" column="121" selection-start="51694" selection-end="51694" vertical-scroll-proportion="0.05639098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/BillingExport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="92" selection-start="5385" selection-end="5385" vertical-scroll-proportion="0.060240965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="315" selection-end="315" vertical-scroll-proportion="0.33270678" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="309" column="0" selection-start="7500" selection-end="7500" vertical-scroll-proportion="0.66972476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="885" selection-end="885" vertical-scroll-proportion="0.7706422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/printBilling.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="31" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.21052632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/tool/TimerTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="110" selection-end="110" vertical-scroll-proportion="0.28440368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/tool/BillingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="488" selection-end="488" vertical-scroll-proportion="0.22556391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>BillSys:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sqljdbc4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Struts 2|Web|BillSys</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android 2.3.3 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ganymed-ssh2-build210</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
