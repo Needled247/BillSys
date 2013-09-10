@@ -18,6 +18,16 @@
         <session-timeout>30</session-timeout>
     </session-config>
 
+    <servlet>
+        <servlet-name>TimerTool</servlet-name>
+        <servlet-class>com.bill.tool.TimerTool</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TimerTool</servlet-name>
+        <url-pattern>/TimerTool</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>login.jsp</welcome-file>
     </welcome-file-list>
