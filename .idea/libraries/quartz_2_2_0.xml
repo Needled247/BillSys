@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="quartz-2.2.0">
+    <CLASSES>
+      <root url="jar://E:/Coding/quartz-2.2.0/lib/quartz-2.2.0.jar!/" />
+      <root url="jar://E:/Coding/quartz-2.2.0/lib/quartz-jobs-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
