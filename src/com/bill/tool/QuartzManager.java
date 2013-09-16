@@ -4,6 +4,8 @@ import com.bill.Job.TimmingOpen;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
+import static org.quartz.CronScheduleBuilder.cronSchedule;
+
 /**
  * Created with IntelliJ IDEA.
  * User: HP
@@ -21,10 +23,13 @@ public class QuartzManager {
         try{
             SchedulerFactory schedulerFactory = new StdSchedulerFactory();
             Scheduler scheduler = schedulerFactory.getScheduler();
-            //1秒间隔，永远重复执行
-            SimpleScheduleBuilder simpleScheduleBuilder = SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(1).repeatForever();
+            /*
             Trigger trigger = TriggerBuilder.newTrigger().withIdentity(TRIGGER_NAME,TRIGGER_GROUP)
                     .startAt(DateBuilder.nextGivenSecondDate(null,2)).withSchedule(simpleScheduleBuilder).build();
+                    */
+            //每天0点执行检查，日期匹配则执行计划任务。
+            CronTrigger trigger = TriggerBuilder.newTrigger().withIdentity(TRIGGER_NAME,TRIGGER_GROUP)
+                    .withSchedule(cronSchedule("0 0 0 * * ?")).build();
             JobDetail jobDetail = JobBuilder.newJob(TimmingOpen.class).withIdentity(JOB_NAME,JOB_GROUP).build();
             scheduler.scheduleJob(jobDetail,trigger);
             scheduler.start();
