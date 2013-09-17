@@ -40,7 +40,25 @@ public class SaleDetailEdit extends ActionSupport {
     private String gate;
     private String tbl;
     private String Balance;
+    private String opentime;
+    private String endtime;
     BillSysDAOImpl impl = new BillSysDAOImpl();
+
+    public String getOpentime() {
+        return opentime;
+    }
+
+    public void setOpentime(String opentime) {
+        this.opentime = opentime;
+    }
+
+    public String getEndtime() {
+        return endtime;
+    }
+
+    public void setEndtime(String endtime) {
+        this.endtime = endtime;
+    }
 
     public String getBalance() {
         return Balance;
@@ -279,6 +297,8 @@ public class SaleDetailEdit extends ActionSupport {
             user.setTactics(userGroup);
             user.setProtocal(protocal);
             user.setTbl(tbl);
+            user.setMaturityTime(endtime);
+            user.setEmail(opentime); //开通时间
             user.setItime(new BillSysTool().getCurrentTime());
             try{
                 flag = impl.userRegister(user);

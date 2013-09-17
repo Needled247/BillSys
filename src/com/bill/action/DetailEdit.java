@@ -41,7 +41,25 @@ public class DetailEdit extends ActionSupport {
     private String protocal;
     private String isPay;
     private String Balance;
+    private String opentime;
+    private String endtime;
     BillSysDAOImpl impl = new BillSysDAOImpl();
+
+    public String getOpentime() {
+        return opentime;
+    }
+
+    public void setOpentime(String opentime) {
+        this.opentime = opentime;
+    }
+
+    public String getEndtime() {
+        return endtime;
+    }
+
+    public void setEndtime(String endtime) {
+        this.endtime = endtime;
+    }
 
     public String getBalance() {
         return Balance;
@@ -296,6 +314,8 @@ public class DetailEdit extends ActionSupport {
                 user.setGate(gate);
                 user.setProtocal(protocal);
                 user.setBalance(Balance);
+                user.setEmail(opentime); //开通时间
+                user.setMaturityTime(endtime);
                 if(impl.userRegister(user)){
                     BillSys_User userInfo = new BillSys_User();
                     userInfo.setUsername(userid);
@@ -349,6 +369,8 @@ public class DetailEdit extends ActionSupport {
             user.setTbl(tbl_name);
             user.setGate(gate);
             user.setProtocal(protocal);
+            user.setMaturityTime(endtime);
+            user.setEmail(opentime);  //开通时间
             try{
                 flag = impl.userRegister(user);
                 BillSys_User userInfo = new BillSys_User();

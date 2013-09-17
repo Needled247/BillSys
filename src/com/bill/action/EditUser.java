@@ -39,7 +39,16 @@ public class EditUser extends ActionSupport {
     private String tbl;
     private String protocal;
     private String gate;
+    private String opentime;
     private List userGroupList = new ArrayList();
+
+    public String getOpentime() {
+        return opentime;
+    }
+
+    public void setOpentime(String opentime) {
+        this.opentime = opentime;
+    }
 
     public String getGate() {
         return gate;
@@ -206,6 +215,7 @@ public class EditUser extends ActionSupport {
             user.setProtocal(protocal);
             user.setTbl(tbl);
             user.setGate(gate);
+            user.setEmail(opentime);
             boolean flag = impl.updateUserInfo(user);
             if(flag){
                 out.print("success");

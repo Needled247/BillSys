@@ -87,10 +87,15 @@ function editApplyInfo(){
     var finalUser = $("#finalUser").val();
     var tbl = $("#tbl").val();
     var toPrint = $("#toPrint");
+    var opentime = $("#opentime").val();
+    var endtime = $("#endtime").val();
     $("#btn_save").attr('disabled',"true");
     $("#btn_print").attr('disabled',"true");
     $("#btn_init").attr('disabled',"true");
-    $.post("DetailEdit",{tbl:tbl,editType:editType,phoneNum:phoneNum,userid:userId,shortNum:shortNum,mobile:mobile,phoneIp:phoneIp,vlan:vlan,installer:installer,installTime:installTime,ipadd:ipadd,finalNum:finalNum,finalUser:finalUser,userGroup:userGroup,Balance:Balance,gate:gate,protocal:protocal},function(data){
+    $.post("DetailEdit",{tbl:tbl,editType:editType,phoneNum:phoneNum,userid:userId,shortNum:shortNum,
+        mobile:mobile,phoneIp:phoneIp,vlan:vlan,installer:installer,installTime:installTime,ipadd:ipadd,
+        finalNum:finalNum,finalUser:finalUser,userGroup:userGroup,Balance:Balance,gate:gate,protocal:protocal,
+        opentime:opentime,endtime:endtime},function(data){
         if(data=='update_success'){
             $("#btn_save").removeAttr("disabled");
             $("#btn_print").removeAttr("disabled");

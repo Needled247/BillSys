@@ -66,6 +66,8 @@ function createAccount(){
     var protocal = $("#protocal").val();
     var toPrint = $("#toPrint");
     var isPay = $("#isPay").val();
+    var opentime = $("#opentime").val();
+    var endtime = $("#endtime").val();
     $("#btn_save").attr("disabled","true");
     $("#btn_print").attr("disabled","true");
     $("#btn_back").attr("disabled","true");
@@ -87,7 +89,9 @@ function createAccount(){
             Balance:Balance,
             gate:gate,
             protocal:protocal,
-            isPay:isPay
+            isPay:isPay,
+            opentime:opentime,
+            endtime:endtime
         },
         function(data){
         if(data=='success'){

@@ -11,16 +11,16 @@ function editUser(){
     var balance = $("#balance").val();
     var stored = $("#stored").val();
     var mtime = $("#mTime").val();
+    var opentime = $("#opentime").val();
     var startTime = $("#time").val();
     var protocal = $("#protocal").val();
     var id = $("#id").val();
     var gate = $("#gate").val();
     var tbl = $("#tbl").val();
-
     var type='update'
     $.post("EditUser",{type:type,id:id,phoneNum:phoneNum,userId:userId,shortNum:shortNum,mobile:mobile,
     time:time,ipadd:ipadd,vlan:vlan,tactics:tactics,status:status,balance:balance,stored:stored,mtime:mtime,
-        time:startTime,protocal:protocal,gate:gate,tbl:tbl},function(data){
+        time:startTime,protocal:protocal,gate:gate,tbl:tbl,opentime:opentime},function(data){
         if(data=='success'){
             alert('ÐÞ¸Ä³É¹¦£¡');
             window.location.href='ViewUser.jsp';
@@ -45,6 +45,7 @@ function initUserInfo(){
     var balance = $("#balance").val();
     var stored = $("#stored").val();
     var mtime = $("#mTime").val();
+    var opentime = $("#opentime").val();
     var startTime = $("#time").val();
     var protocal = $("#protocal").val();
     var id = $("#id").val();
@@ -61,7 +62,8 @@ function initUserInfo(){
         $("#btn_openLong").attr("disabled","true");
         $("#btn_closeLong").attr("disabled","true");
         $.post("EditUser",{type:type,id:id,phoneNum:phoneNum,userId:userId,shortNum:shortNum,mobile:mobile,
-            time:time,ipadd:ipadd,vlan:vlan,tactics:tactics,status:status,balance:balance,stored:stored,mtime:mtime,time:startTime,protocal:protocal,tbl:tbl},function(data){
+            time:time,ipadd:ipadd,vlan:vlan,tactics:tactics,status:status,balance:balance,stored:stored,mtime:mtime,
+            time:startTime,protocal:protocal,tbl:tbl,opentime:opentime},function(data){
             if(data == 'success'){
                 window.location.href='uSuccess.jsp';
             }

@@ -82,7 +82,7 @@
     String userid = request.getParameter("userid");
     String userIdText="",mobileText="",phoneIpText="",vlanText="",longNumText="",
             shortNumText="",itimeText="",lastUptText="",TacticsText="",statusText="",balanceText="",
-            storedText="",MaturityTime="",tbl="",gate="",protocal="";
+            storedText="",MaturityTime="",tbl="",gate="",protocal="",opentime="";
     List li = new ArrayList();
     gtao_Phone_User user = new gtao_Phone_User();
     user.setLongNum(longNum);
@@ -107,6 +107,7 @@
         balanceText = tool.NullStrFormatter(userTemp.getBalance());
         storedText = tool.NullStrFormatter(userTemp.getStored());
         MaturityTime = tool.NullStrFormatter(userTemp.getMaturityTime());
+        opentime = tool.NullStrFormatter(userTemp.getEmail());
         tbl = userTemp.getTbl();
         gate =userTemp.getGate();
         protocal = userTemp.getProtocal();
@@ -269,6 +270,12 @@
             </div>
         </div>
         <div class="control-group">
+            <label class="control-label" for="opentime">开通时间：</label>
+            <div class="controls">
+                <input class="input-xlarge focused" id="opentime" type="text" value="<%=opentime%>">
+            </div>
+        </div>
+        <div class="control-group">
             <label class="control-label" for="mTime">到期时间：</label>
             <div class="controls">
                 <input class="input-xlarge focused" id="mTime" type="text" value="<%=MaturityTime%>">
@@ -321,6 +328,8 @@
 <script type="text/javascript">
     $(function(){
         $("#installTime").datepicker();
+        $("#mTime").datepicker();
+        $("#opentime").datepicker();
     });
 </script>
 <!-- transition / effect library -->

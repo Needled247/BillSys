@@ -261,6 +261,18 @@
                 <input class="input-xlarge focused" id="Balance" type="text" placeholder="请填写数字，不赠送请为空">
             </div>
         </div>
+        <div class="control-group">
+            <label class="control-label" for="opentime">开通时间：</label>
+            <div class="controls">
+                <input class="input-xlarge focused" id="opentime" type="text">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="endtime">到期时间：</label>
+            <div class="controls">
+                <input class="input-xlarge focused" id="endtime" type="text">
+            </div>
+        </div>
         <div class="alert alert-error" id="alert_block" hidden>
             <button type="button" class="close" data-dismiss="alert">×</button>
             <strong>注意！</strong> <div id="alert"></div>
@@ -347,6 +359,8 @@
 <script type="text/javascript">
     $(function(){
         $("#installTime").datepicker();
+        $("#opentime").datepicker();
+        $("#endtime").datepicker();
     });
 </script>
 <!-- transition / effect library -->
