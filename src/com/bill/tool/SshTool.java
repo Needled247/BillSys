@@ -129,6 +129,12 @@ public class SshTool {
         return flag;
     }
 
+    /**
+     * 用户权限管理
+     * @param eid
+     * @param action
+     * @return Boolean
+     */
     public boolean userCallCompetenceManage(String eid,String action){
         boolean flag = false;
         try{
@@ -150,6 +156,112 @@ public class SshTool {
             }
             else if(action.equals("offLong")){
                 cmd = "/home/to9500/s_offuser_ddd.sh "+eid;
+            }
+            System.out.println(cmd);
+            sess.execCommand(cmd);
+            InputStream stdout = new StreamGobbler(sess.getStdout());
+            BufferedReader br = new BufferedReader(new InputStreamReader(stdout));
+            int mark = 0;
+            while (true)
+            {
+                String line = br.readLine();
+                if (line == null)
+                    break;
+                if(line.contains("Command executed success")){
+                    mark++;
+                }
+                System.out.println(line);
+            }
+            System.out.println("ExitCode: " + sess.getExitStatus());
+            if(mark>=2){
+                flag = true;
+            }
+            sess.close();
+            conn.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace(System.err);
+        }
+        return flag;
+    }
+
+    /**
+     * 语音业务预开通   “开通第一步”
+     * @param longNum
+     * @param shortNum
+     * @param ipadd
+     * @param userid
+     * @param protocal
+     * @exception IOException
+     * @return  boolean
+     */
+    public boolean pre_Oppening(String longNum,String shortNum,String ipadd,String userid,String protocal){
+        boolean flag = false;
+        try{
+            Connection conn = new Connection(HOST_NAME,PORT);
+            conn.connect();
+            boolean isAuthenticated = conn.authenticateWithPassword(USER_NAME, USER_PASS);
+            if (isAuthenticated == false)
+                throw new IOException("验证失败");
+            Session sess = conn.openSession();
+            String cmd = "";
+            if(protocal.equals("sip")||protocal=="sip"){
+                cmd = "/home/to9500/s_opensiponlyinter.sh "+shortNum+" "+longNum+" "+ipadd;
+            }
+            else if(protocal.equals("248")||protocal=="248"){
+                cmd = "/home/to9500/s_open248onlyinter.sh "+shortNum+" "+longNum+" "+ipadd+" "+userid;
+            }
+            System.out.println(cmd);
+            sess.execCommand(cmd);
+            InputStream stdout = new StreamGobbler(sess.getStdout());
+            BufferedReader br = new BufferedReader(new InputStreamReader(stdout));
+            int mark = 0;
+            while (true)
+            {
+                String line = br.readLine();
+                if (line == null)
+                    break;
+                if(line.contains("Command executed success")){
+                    mark++;
+                }
+                System.out.println(line);
+            }
+            System.out.println("ExitCode: " + sess.getExitStatus());
+            if(mark>=2){
+                flag = true;
+            }
+            sess.close();
+            conn.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace(System.err);
+        }
+        return flag;
+    }
+
+    /**
+     * 语音开通第二步，开通关闭权限
+     * @param eid
+     * @param action
+     * @return boolean
+     */
+    public boolean pre_OpenningCompetence(String eid,String action){
+        boolean flag = false;
+        try{
+            Connection conn = new Connection(HOST_NAME,PORT);
+            conn.connect();
+            boolean isAuthenticated = conn.authenticateWithPassword(USER_NAME, USER_PASS);
+            if (isAuthenticated == false)
+                throw new IOException("Authenticated Fail");
+            Session sess = conn.openSession();
+            String cmd = "";
+            if(action.equals("open")){
+                //cmd = "/home/to9500/s_onuser_local.sh "+eid;         开通长途市话脚本
+            }
+            else if(action.equals("close")){
+                //cmd = "/home/to9500/s_offuser_ddd.sh "+eid;          关闭长途市话脚本
             }
             System.out.println(cmd);
             sess.execCommand(cmd);

@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c42f42-901c-47aa-96ed-56b2e921336e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/CreateApply.js" afterPath="$PROJECT_DIR$/web/js/CreateApply.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/CreateApply.jsp" afterPath="$PROJECT_DIR$/web/CreateApply.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" afterPath="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/action/EditUser.java" afterPath="$PROJECT_DIR$/src/com/bill/action/EditUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/EditUser.js" afterPath="$PROJECT_DIR$/web/js/EditUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/EditUser.jsp" afterPath="$PROJECT_DIR$/web/EditUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" afterPath="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ViewApply.jsp" afterPath="$PROJECT_DIR$/web/ViewApply.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/editApplyInfo.js" afterPath="$PROJECT_DIR$/web/js/editApplyInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/tool/SshTool.java" afterPath="$PROJECT_DIR$/src/com/bill/tool/SshTool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" afterPath="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BillSys.iws" />
@@ -138,7 +130,7 @@
     <file path="/tbl_billInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372298798495" ignored="false" />
     <file path="/CallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373095887745" ignored="false" />
     <file path="/CallHistory.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374300864034" ignored="false" />
-    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379385464756" ignored="false" />
+    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379474238429" ignored="false" />
     <file path="/test1.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373009916765" ignored="false" />
     <file path="/test2.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373006243222" ignored="false" />
     <file path="/Validate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376559241955" ignored="false" />
@@ -170,7 +162,7 @@
     <file path="/radius.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373354375684" ignored="false" />
     <file path="/TBL_USERSINFO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373360302811" ignored="false" />
     <file path="/sshLogin.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373514328997" ignored="false" />
-    <file path="/SshTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374732415117" ignored="false" />
+    <file path="/SshTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379493585186" ignored="false" />
     <file path="/uSuccess.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373618863612" ignored="false" />
     <file path="/logout.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376548624549" ignored="false" />
     <file path="/createAccount.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375431707372" ignored="false" />
@@ -244,7 +236,7 @@
     <file path="/MyJob.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379058813116" ignored="false" />
     <file path="$PROJECT_DIR$/../quartzTest/src/quartzTest.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061640572" ignored="false" />
     <file path="$PROJECT_DIR$/../quartzTest/src/MyJob.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061699546" ignored="false" />
-    <file path="/TimmingOpen.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379304332848" ignored="false" />
+    <file path="/TimmingOpen.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379493631475" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,6 +266,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
@@ -310,7 +303,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -327,16 +319,25 @@
       <file leaf-file-name="ViewApply.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ViewApply.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="398" column="22" selection-start="16176" selection-end="16176" vertical-scroll-proportion="-9.3529415">
+            <state line="398" column="82" selection-start="16197" selection-end="16197" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editApplyInfo.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/editApplyInfo.js">
+      <file leaf-file-name="TimmingOpen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.110091746">
+            <state line="36" column="80" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SshTool.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/tool/SshTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="235" column="132" selection-start="8004" selection-end="8004" vertical-scroll-proportion="0.1876209">
               <folding />
             </state>
           </provider>
@@ -354,7 +355,7 @@
       <file leaf-file-name="CreateApply.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/CreateApply.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="323" column="84" selection-start="13767" selection-end="13767" vertical-scroll-proportion="-6.7647057">
+            <state line="323" column="84" selection-start="13767" selection-end="13767" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -381,7 +382,7 @@
       <file leaf-file-name="EditUser.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="296" column="71" selection-start="12601" selection-end="12601" vertical-scroll-proportion="-3.7058823">
+            <state line="296" column="71" selection-start="12601" selection-end="12601" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -428,11 +429,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/bill/tool/TimerTool.java" />
         <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
         <option value="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" />
         <option value="$PROJECT_DIR$/web/ViewApply.jsp" />
         <option value="$PROJECT_DIR$/web/js/editApplyInfo.js" />
@@ -444,6 +443,8 @@
         <option value="$PROJECT_DIR$/web/js/CreateApply.js" />
         <option value="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
         <option value="$PROJECT_DIR$/web/js/EditUser.js" />
+        <option value="$PROJECT_DIR$/src/com/bill/tool/SshTool.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
       </list>
     </option>
   </component>
@@ -558,6 +559,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -641,13 +643,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="action" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1057,7 +1080,11 @@
       <created>1379320757989</created>
       <updated>1379320757989</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2013-09-17&#10;">
+      <created>1379412121594</created>
+      <updated>1379412121594</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1096,7 +1123,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3615917" sideWeight="0.5159091" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67291313" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19166666" sideWeight="0.22827938" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.2044293" order="1" side_tool="true" content_ui="tabs" />
@@ -1114,6 +1140,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1155,7 +1182,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="2013-09-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2013-09-17&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1171,6 +1198,7 @@
     <MESSAGE value="2013-09-10" />
     <MESSAGE value="2013-09-13" />
     <MESSAGE value="2013-09-16" />
+    <MESSAGE value="2013-09-17&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1191,13 +1219,6 @@
         <state line="13" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="74" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="98" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
@@ -1209,37 +1230,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="50" selection-end="56" vertical-scroll-proportion="0.16513762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/tool/SshTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="64" selection-start="2160" selection-end="2173" vertical-scroll-proportion="3.029358">
-          <folding />
-        </state>
+        <state line="3" column="39" selection-start="50" selection-end="56" vertical-scroll-proportion="0.16513762" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bill/pojo/gtao_phone_view.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="627" selection-end="627" vertical-scroll-proportion="0.8549323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="303" column="33" selection-start="7272" selection-end="7272" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="0" selection-start="6202" selection-end="6202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="30" selection-start="627" selection-end="627" vertical-scroll-proportion="0.8549323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java">
@@ -1251,30 +1247,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/DetailEdit.java">
+    <entry file="file://$PROJECT_DIR$/web/js/editApplyInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="342" column="19" selection-start="8937" selection-end="8937" vertical-scroll-proportion="0.0">
+        <state line="101" column="81" selection-start="3306" selection-end="3306" vertical-scroll-proportion="0.76363635" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ViewApply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="398" column="82" selection-start="16197" selection-end="16197" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="71" selection-start="12601" selection-end="12601" vertical-scroll-proportion="-3.7058823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/EditUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="76" selection-start="981" selection-end="989" vertical-scroll-proportion="0.0">
+        <state line="255" column="0" selection-start="6202" selection-end="6202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/CreateApply.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="84" selection-start="13767" selection-end="13767" vertical-scroll-proportion="-6.7647057">
+        <state line="323" column="84" selection-start="13767" selection-end="13767" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/DetailEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="19" selection-start="8937" selection-end="8937" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1286,16 +1287,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/ViewApply.jsp">
+    <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="398" column="22" selection-start="16176" selection-end="16176" vertical-scroll-proportion="-9.3529415">
+        <state line="296" column="71" selection-start="12601" selection-end="12601" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/editApplyInfo.js">
+    <entry file="file://$PROJECT_DIR$/web/js/EditUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="43" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.110091746">
+        <state line="22" column="76" selection-start="981" selection-end="989" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="33" selection-start="7272" selection-end="7272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="80" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/tool/SshTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="235" column="132" selection-start="8004" selection-end="8004" vertical-scroll-proportion="0.1876209">
           <folding />
         </state>
       </provider>
