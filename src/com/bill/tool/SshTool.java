@@ -258,10 +258,10 @@ public class SshTool {
             Session sess = conn.openSession();
             String cmd = "";
             if(action.equals("open")){
-                //cmd = "/home/to9500/s_onuser_local.sh "+eid;         开通长途市话脚本
+                cmd = "/home/to9500/s_onuser_all.sh  "+eid;
             }
             else if(action.equals("close")){
-                //cmd = "/home/to9500/s_offuser_ddd.sh "+eid;          关闭长途市话脚本
+                cmd = "/home/to9500/s_offuser_all.sh "+eid;
             }
             System.out.println(cmd);
             sess.execCommand(cmd);

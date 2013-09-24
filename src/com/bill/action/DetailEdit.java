@@ -216,6 +216,8 @@ public class DetailEdit extends ActionSupport {
     @Override
     public String execute() throws Exception {
         boolean flag = false;
+        BillSysTool billSysTool = new BillSysTool();
+        SshTool sshTool = new SshTool();
         HttpServletResponse response = ServletActionContext.getResponse();
         response.setContentType("text/html;charset=GBK");
         PrintWriter out = response.getWriter();
@@ -224,15 +226,31 @@ public class DetailEdit extends ActionSupport {
             regIp = phoneIp.substring(0,phoneIp.lastIndexOf("/"));
         }
         //编辑
-        if(editType.equals("update")||editType=="update"){
-            flag = new SshTool().CreateUser(phoneNum,shortNum,regIp,protocal,userid);
+        //开通时间是当天
+        if(editType.equals("update")&&opentime.equals(billSysTool.getToday())){
+            flag = sshTool.CreateUser(phoneNum,shortNum,regIp,protocal,userid);
             if(flag){
-               if(this.updateDetailApply()){
+               if(this.updateDetailApply("已开通")){
                     out.print("update_success");
                  }
                 else{
                     out.print("error");
                  }
+            }
+            else {
+                out.print("reg_error");
+            }
+        }
+        //开通时间不是当天
+        else if(editType.equals("update")&&!opentime.equals(billSysTool.getToday())){
+            flag = sshTool.pre_Oppening(phoneNum,shortNum,regIp,userid,protocal);
+            if(flag){
+                if(this.updateDetailApply("未开通")){
+                    out.print("update_success");
+                }
+                else{
+                    out.print("error");
+                }
             }
             else {
                 out.print("reg_error");
@@ -261,8 +279,9 @@ public class DetailEdit extends ActionSupport {
         //开户
         if(editType.equals("create")){
             boolean creatMark = false;
-            if(tbl.contains("sale")){
-                if(new SshTool().CreateUser(phoneNum,shortNum,regIp,protocal,userid)){
+            //付费号码  开通时间是今天
+            if(tbl.contains("sale")&&opentime.equals(billSysTool.getToday())){
+                if(sshTool.CreateUser(phoneNum,shortNum,regIp,protocal,userid)){
                     gtao_Phone_bc_sale sale = new gtao_Phone_bc_sale();
                     sale.setLongNum(phoneNum);
                     sale.setShortNum(shortNum);
@@ -274,14 +293,47 @@ public class DetailEdit extends ActionSupport {
                     sale.setInstallTime(installTime);
                     sale.setGate(gate);
                     sale.setIsPay(isPay);
-                    creatMark = impl.createAccount(null,sale,tbl,phoneNum);
+                    this.impl.createAccount(null,sale,tbl,phoneNum);
+                    if(this.CreateUser("已开通")){
+                        out.print("success");
+                    }
+                    else {
+                        out.print("error");
+                    }
                 }
                 else {
                     out.print("reg_error");
                 }
             }
-            else {
-                if(new SshTool().CreateUser(phoneNum,shortNum,regIp,protocal,userid)){
+            //付费号码  开通时间不是当天
+            else if(tbl.contains("sale")&&!opentime.equals(billSysTool.getToday())){
+                if(sshTool.pre_Oppening(phoneNum,shortNum,regIp,userid,protocal)){
+                    gtao_Phone_bc_sale sale = new gtao_Phone_bc_sale();
+                    sale.setLongNum(phoneNum);
+                    sale.setShortNum(shortNum);
+                    sale.setUserId(userid);
+                    sale.setType(protocal);
+                    sale.setMobile(mobile);
+                    sale.setIp(phoneIp);
+                    sale.setInstaller(installer);
+                    sale.setInstallTime(installTime);
+                    sale.setGate(gate);
+                    sale.setIsPay(isPay);
+                    this.impl.createAccount(null,sale,tbl,phoneNum);
+                    if(this.CreateUser("未开通")){
+                        out.print("success");
+                    }
+                    else {
+                        out.print("error");
+                    }
+                }
+                else {
+                    out.print("reg_error");
+                }
+            }
+            //免费号码 开通时间是当天
+            else if(!tbl.contains("sale")&&opentime.equals(billSysTool.getToday())) {
+                if(sshTool.CreateUser(phoneNum,shortNum,regIp,protocal,userid)){
                     gtao_phone_view view = new gtao_phone_view();
                     view.setLongNum(phoneNum);
                     view.setUserId(userid);
@@ -293,40 +345,42 @@ public class DetailEdit extends ActionSupport {
                     view.setInstaller(installer);
                     view.setInstallTime(installTime);
                     view.setGate(gate);
-                    creatMark = impl.createAccount(view,null,tbl,phoneNum);
+                    this.impl.createAccount(view,null,tbl,phoneNum);
+                    if(this.CreateUser("已开通")){
+                        out.print("success");
+                    }
+                    else {
+                        out.print("error");
+                    }
                 }
                 else {
                     out.print("reg_error");
                 }
             }
-            if(creatMark){
-                gtao_Phone_User user = new gtao_Phone_User();
-                user.setLongNum(phoneNum);
-                user.setUserid(userid);
-                user.setShortNum(shortNum);
-                user.setItime(new BillSysTool().getCurrentTime());
-                user.setMobile(mobile);
-                user.setPhoneIp(phoneIp);
-                user.setVlan(vlan);
-                user.setStored(Stored);
-                user.setTactics(userGroup);
-                user.setTbl(tbl);
-                user.setGate(gate);
-                user.setProtocal(protocal);
-                user.setBalance(Balance);
-                user.setEmail(opentime); //开通时间
-                user.setMaturityTime(endtime);
-                if(impl.userRegister(user)){
-                    BillSys_User userInfo = new BillSys_User();
-                    userInfo.setUsername(userid);
-                    userInfo.setPassword(phoneNum);
-                    userInfo.setLevel(2);
-                    //addUser
-                    impl.addUser(userInfo);
-                    out.print("success");
+            //免费号码  开通时间不是当天
+            else if(!tbl.contains("sale")&&!opentime.equals(billSysTool.getToday())){
+                if(sshTool.pre_Oppening(phoneNum,shortNum,regIp,userid,protocal)){
+                    gtao_phone_view view = new gtao_phone_view();
+                    view.setLongNum(phoneNum);
+                    view.setUserId(userid);
+                    view.setShortNum(shortNum);
+                    view.setMobile(mobile);
+                    view.setType(protocal);
+                    view.setIp(phoneIp);
+                    view.setVlan(vlan);
+                    view.setInstaller(installer);
+                    view.setInstallTime(installTime);
+                    view.setGate(gate);
+                    this.impl.createAccount(view,null,tbl,phoneNum);
+                    if(this.CreateUser("未开通")){
+                        out.print("success");
+                    }
+                    else {
+                        out.print("error");
+                    }
                 }
                 else {
-                    out.print("error");
+                    out.print("reg_error");
                 }
             }
         }
@@ -336,11 +390,44 @@ public class DetailEdit extends ActionSupport {
         return null;
     }
 
+    public boolean CreateUser(String status){
+        boolean flag = false;
+        gtao_Phone_User user = new gtao_Phone_User();
+        user.setLongNum(phoneNum);
+        user.setUserid(userid);
+        user.setShortNum(shortNum);
+        user.setItime(new BillSysTool().getCurrentTime());
+        user.setMobile(mobile);
+        user.setPhoneIp(phoneIp);
+        user.setVlan(vlan);
+        user.setStored(Stored);
+        user.setTactics(userGroup);
+        user.setTbl(tbl);
+        user.setGate(gate);
+        user.setProtocal(protocal);
+        user.setBalance(Balance);
+        user.setEmail(opentime); //开通时间
+        user.setMaturityTime(endtime);
+        if(impl.userRegister(user)){
+            BillSys_User userInfo = new BillSys_User();
+            userInfo.setUsername(userid);
+            userInfo.setPassword(phoneNum);
+            userInfo.setLevel(2);
+            //addUser
+            impl.addUser(userInfo);
+            flag = true;
+        }
+        else {
+            flag = false;
+        }
+        return flag;
+    }
+
     /**
      * 功能：更新数据库订单数据。
      * @return flag
      */
-    public boolean updateDetailApply(){
+    public boolean updateDetailApply(String status){
         boolean flag = false;
         gtao_phone_view view = new gtao_phone_view();
         view.setLongNum(phoneNum);
@@ -371,6 +458,7 @@ public class DetailEdit extends ActionSupport {
             user.setProtocal(protocal);
             user.setMaturityTime(endtime);
             user.setEmail(opentime);  //开通时间
+            user.setStatus(status);
             try{
                 flag = impl.userRegister(user);
                 BillSys_User userInfo = new BillSys_User();
