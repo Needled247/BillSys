@@ -251,9 +251,10 @@
             <label class="control-label" for="status">状态：</label>
             <div class="controls">
                 <select id="status">
-                    <option value="1">已开通</option>
-                    <option value="0">未开通</option>
-                    <option value="2">停机</option>
+                    <option value="<%=statusText%>" selected hidden><%=statusText%></option>
+                    <option value="已开通">已开通</option>
+                    <option value="未开通">未开通</option>
+                    <option value="停机">停机</option>
                 </select>
             </div>
         </div>

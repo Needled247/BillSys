@@ -65,4 +65,5 @@ public interface BillSysDAO {
     public boolean addUser(BillSys_User user);
     public boolean removeUser(BillSys_User user);
     public List getUserInfoByNum(String longNum);
+    public boolean updateUserStatus(String status,int id);
 }

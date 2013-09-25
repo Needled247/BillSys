@@ -350,6 +350,7 @@ public class BillSysDAOImpl implements BillSysDAO {
         Query query = session.createQuery(hql);
         try{
             li = query.list();
+            session.flush();
         }
         catch (HibernateException e)
         {
@@ -1675,6 +1676,38 @@ public class BillSysDAOImpl implements BillSysDAO {
             session.close();
         }
         return li;
+    }
+
+    /**
+     * ÐÞ¸ÄÓÃ»§×´Ì¬
+     * @param status
+     * @param id
+     * @return boolean
+     */
+    @Override
+    public boolean updateUserStatus(String status,int id) {
+        boolean flag = false;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        gtao_Phone_User user = new gtao_Phone_User();
+        user.setId(id);
+        user.setStatus(status);
+        try{
+            session.update(user);
+            transaction.commit();
+            session.flush();
+            flag = true;
+        }
+        catch (HibernateException e){
+            e.printStackTrace();
+            transaction.rollback();
+            flag = false;
+        }
+        finally {
+            session.clear();
+            session.close();
+        }
+        return flag;
     }
 
     /**

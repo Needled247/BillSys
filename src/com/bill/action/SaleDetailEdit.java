@@ -215,6 +215,8 @@ public class SaleDetailEdit extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
+        BillSysTool billSysTool = new BillSysTool();
+        SshTool sshTool = new SshTool();
         boolean flag = false;
         HttpServletResponse response = ServletActionContext.getResponse();
         response.setContentType("text/html;charset=GBK");
@@ -224,10 +226,26 @@ public class SaleDetailEdit extends ActionSupport {
         }
         PrintWriter out = response.getWriter();
         //编辑
-        if(editType.equals("update")){
-            flag = new SshTool().CreateUser(phoneNum,shortNum,regIp,protocal,userid);
+        //当天开通
+        if(editType.equals("update")&&opentime.equals(billSysTool.getToday())){
+            flag = sshTool.CreateUser(phoneNum,shortNum,regIp,protocal,userid);
             if(flag){
-                if(this.updateSaleDetailApply()){
+                if(this.updateSaleDetailApply("已开通")){
+                    out.print("update_success");
+                }
+                else{
+                    out.print("error");
+                }
+            }
+            else {
+                out.print("reg_error");
+            }
+        }
+        else if(editType.equals("update")&&!opentime.equals(billSysTool.getToday())){
+            flag = sshTool.pre_Oppening(phoneNum,shortNum,regIp,userid,protocal);
+            if(flag){
+                //do something.
+                if(this.updateSaleDetailApply("未开通")){
                     out.print("update_success");
                 }
                 else{
@@ -268,7 +286,7 @@ public class SaleDetailEdit extends ActionSupport {
      * 功能：更新数据库订单数据。
      * @return flag
      */
-    public boolean updateSaleDetailApply(){
+    public boolean updateSaleDetailApply(String status){
         boolean flag = false;
         gtao_Phone_bc_sale sale = new gtao_Phone_bc_sale();
         sale.setLongNum(phoneNum);
@@ -299,6 +317,7 @@ public class SaleDetailEdit extends ActionSupport {
             user.setTbl(tbl);
             user.setMaturityTime(endtime);
             user.setEmail(opentime); //开通时间
+            user.setStatus(status);
             user.setItime(new BillSysTool().getCurrentTime());
             try{
                 flag = impl.userRegister(user);

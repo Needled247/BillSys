@@ -28,18 +28,25 @@ public class TimmingOpen implements Job{
         Iterator iterator = li.iterator();
         gtao_Phone_User user = null;
         BillSysTool tool = new BillSysTool();
+        BillSysDAOImpl impl = new BillSysDAOImpl();
         String today = tool.getToday();
         while (iterator.hasNext()){
             user = (gtao_Phone_User)iterator.next();
             //开通时间匹配
-            if(user.getEmail().equals(today)){
+            if(tool.NullStrFormatter(user.getEmail()).equals(today)){
                 //调用开通方法
-                register.pre_OpenningCompetence(user.getShortNum(),"open");
+                if(register.pre_OpenningCompetence(user.getShortNum(),"open")){
+                    user.setStatus("已开通");
+                    impl.updateUserInfo(user);
+                }
             }
             //到期时间匹配
-            if(user.getMaturityTime().equals(today)){
+            if(tool.NullStrFormatter(user.getMaturityTime()).equals(today)){
                 //关闭权限
-                register.pre_OpenningCompetence(user.getShortNum(),"close");
+                if(register.pre_OpenningCompetence(user.getShortNum(),"close")){
+                    user.setStatus("停机");
+                    impl.updateUserInfo(user);
+                }
             }
         }
     }
