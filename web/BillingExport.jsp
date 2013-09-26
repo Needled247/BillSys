@@ -1,11 +1,12 @@
-<%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
+<%@include file="Validate.jsp"%>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta charset="GBK">
     <title>语音计费管理系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- The styles -->
     <link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
     <style type="text/css">
@@ -41,137 +42,76 @@
 
     <!-- The fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico">
+
 </head>
+
 <body>
 <!-- topbar starts -->
 <%@include file="head.jsp"%>
 <!-- topbar ends -->
 <div class="container-fluid">
-<div class="row-fluid">
+    <div class="row-fluid">
 
-<!-- left menu starts -->
-<%@include file="menu.jsp"%>
-<!-- left menu ends -->
-<div id="content" class="span10">
-<!-- content starts -->
-<div>
-    <ul class="breadcrumb">
-        <li>
-            <a href="#">用户管理</a> <span class="divider">/</span>
-        </li>
-        <li>
-            <a href="#">打印派工单</a>
-        </li>
-    </ul>
-</div>
-<div class="row-fluid sortable ui-sortable">
-<div class="box span12" style="">
-<div class="box-header well" data-original-title="">
-    <h2><i class="icon-edit"></i>打印派工单</h2>
-</div>
-<div class="box-content">
-    <form class="form-horizontal">
-    <fieldset>
-        <div class="control-group">
-            <label class="control-label" for="longNum">长号码：</label>
-            <div class="controls">
-                <input class="input-xlarge focused" id="longNum" type="text" style="width: 15%">
+        <!-- left menu starts -->
+        <%@include file="menu.jsp"%>
+        <!-- left menu ends -->
+
+        <div id="content" class="span10">
+            <!-- content starts -->
+
+            <div>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">用户管理</a> <span class="divider">/</span>
+                    </li>
+                    <li>
+                        <a href="#">打印派工单</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="installer">安装人：</label>
-            <div class="controls">
-                <input class="input-xlarge focused" id="installer" type="text" style="width: 15%">
+
+            <!-- content ends -->
+            <!--zxc-->
+            <div class="row-fluid">
+                <div class="box span12">
+                    <div class="box-content">
+                        <div id="BillPrintBlock" class="dataTables_wrapper" role="grid">
+                            <table class="table table-striped table-bordered bootstrap-datatable datatable dataTable" id="BillPrint" aria-describedby="DataTables_Table_0_info" style="width: 100%">
+                                <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending">ID</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">号码</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">用户账号</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">申请时间</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">所属营业厅</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="installTime">安装时间：</label>
-            <div class="controls">
-                <input class="input-xlarge focused" id="installTime" type="text" style="width: 15%">
-            </div>
-        </div>
-        <div id="toPrint" hidden>
-            <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" >
-                <tbody>
-                <tr style="text-align: center"><h1>语音业务开通派工单</h1></tr>
-                <tr>
-                    <td width="25%">用户姓名：</td>
-                    <td width="25%"><div id="printName"></div></td>
-                    <td width="25%">用户电话：</td>
-                    <td width="25%"><div id="printMobile"></div></td>
-                </tr>
-                <tr>
-                    <td width="25%">用户账号：</td>
-                    <td width="25%"><div id="printUserid"></div></td>
-                    <td width="25%">网关：</td>
-                    <td width="25%"><div id="printGate"></div></td>
-                </tr>
-                <tr>
-                    <td width="25%">住址：</td>
-                    <td width="25%"><div id="printAddress"></div></td>
-                    <td width="25%">MAC地址：</td>
-                    <td width="25%"><div id="printMac"></div></td>
-                </tr>
-                <tr>
-                    <td width="25%">长号：</td>
-                    <td width="25%"><div id="printLongNum"></div></td>
-                    <td width="25%">短号：</td>
-                    <td width="25%"><div id="printShortNum"></div></td>
-                </tr>
-                <tr>
-                    <td width="25%">绑定IP：</td>
-                    <td width="25%"><div id="printIp"></div></td>
-                    <td width="25%">绑定VLAN：</td>
-                    <td width="25%"><div id="printVlan"></div></td>
-                </tr>
-                <tr>
-                    <td width="25%">安装负责人：</td>
-                    <td width="25%"><div id="printInstaller"></div></td>
-                    <td width="25%">安装时间：</td>
-                    <td width="25%"><div id="printInsTime"></div></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+            <!--zxc-->
+        </div><!--/#content.span10-->
+    </div><!--/fluid-row-->
+    <hr>
 
-        <div class="form-actions">
-            <button type="button" class="btn btn-primary" id="btn_save" onclick="initBilling()">查询</button>
-            <button type="button" id="btn_print" class="btn" onclick="PagePrint()">打印</button>
-            <button type="button" class="btn btn-success" onclick="window.location.href='newApply.jsp'">
-                <i class="icon-chevron-left icon-white"></i>返回</button>
-        </div>
-    </fieldset>
-    </form>
-</div>
-</div><!--/span-->
-
-</div>
-
-<!-- content ends -->
-</div><!--/#content.span10-->
-</div><!--/fluid-row-->
-<hr>
-
-<footer>
-    <p class="pull-left">&copy; <a href="http://www.gtao.com" target="_blank">GuanTao High Tech co.,ltd</a> 2013</p>
-</footer>
+    <footer>
+        <p class="pull-left">&copy; <a href="http://www.gtao.com" target="_blank">GuanTao High Tech co.,ltd</a> 2013</p>
+    </footer>
 
 </div><!--/.fluid-container-->
 
 <!-- external javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-
 <!-- jQuery -->
 <script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/jquery.jqprint-0.3.js"></script>
 <!-- jQuery UI -->
 <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $("#installTime").datepicker();
-    });
-</script>
 <!-- transition / effect library -->
 <script src="js/bootstrap-transition.js"></script>
 <!-- alert enhancer library -->
@@ -187,6 +127,7 @@
 <script src="js/bootstrap-tab.js"></script>
 <!-- library for advanced tooltip -->
 <script src="js/bootstrap-tooltip.js"></script>
+<script src="js/UserGroup.js"></script>
 <!-- popover effect library -->
 <script src="js/bootstrap-popover.js"></script>
 <!-- button enhancer library -->
@@ -205,8 +146,15 @@
 <script src='js/fullcalendar.min.js'></script>
 <!-- data table plugin -->
 <script src='js/jquery.dataTables.min.js'></script>
-<!--js文件-->
-<script src="js/printBilling.js"></script>
+
+<!-- chart libraries start -->
+<script src="js/excanvas.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+<script src="js/jquery.flot.pie.min.js"></script>
+<script src="js/jquery.flot.stack.js"></script>
+<script src="js/jquery.flot.resize.min.js"></script>
+<!-- chart libraries end -->
+
 <!-- select or dropdown enhancer -->
 <script src="js/jquery.chosen.min.js"></script>
 <!-- checkbox, radio, and file input styler -->

@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c42f42-901c-47aa-96ed-56b2e921336e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" afterPath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" afterPath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/EditUser.jsp" afterPath="$PROJECT_DIR$/web/EditUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" afterPath="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" afterPath="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" afterPath="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/BillingExport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/BillingExport.jsp" afterPath="$PROJECT_DIR$/web/BillingExport.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java" afterPath="$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BillSys.iws" />
@@ -85,7 +81,7 @@
     <file path="/EditUser.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380097940398" ignored="false" />
     <file path="/a.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372488756478" ignored="false" />
     <file path="/sample.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372150235290" ignored="false" />
-    <file path="/test.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370249274574" ignored="false" />
+    <file path="/test.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380181036688" ignored="false" />
     <file path="/EditFreeNum.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373944877309" ignored="false" />
     <file path="/EditNumInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373945820054" ignored="false" />
     <file path="$PROJECT_DIR$/../ip_phone_new/src/com/gtao/Servlet/saleRegister.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1370325445749" ignored="false" />
@@ -135,7 +131,7 @@
     <file path="/tbl_billInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372298798495" ignored="false" />
     <file path="/CallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373095887745" ignored="false" />
     <file path="/CallHistory.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374300864034" ignored="false" />
-    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380100624561" ignored="false" />
+    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380176189232" ignored="false" />
     <file path="/test1.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373009916765" ignored="false" />
     <file path="/test2.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373006243222" ignored="false" />
     <file path="/Validate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376559241955" ignored="false" />
@@ -226,8 +222,8 @@
     <file path="/EditFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376677504342" ignored="false" />
     <file path="/BillingExport.jsp.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376727263599" ignored="false" />
     <file path="/printBilling.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376900679326" ignored="false" />
-    <file path="/BillingPrintAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376901839671" ignored="false" />
-    <file path="/BillingExport.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376898598650" ignored="false" />
+    <file path="/BillingPrintAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380187975697" ignored="false" />
+    <file path="/BillingExport.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380187640194" ignored="false" />
     <file path="$PROJECT_DIR$/../test/web/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377851332824" ignored="false" />
     <file path="$PROJECT_DIR$/../test/web/css/carousel.css" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377850733525" ignored="false" />
     <file path="$PROJECT_DIR$/../test/web/js/holder.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377850825396" ignored="false" />
@@ -242,6 +238,7 @@
     <file path="$PROJECT_DIR$/../quartzTest/src/quartzTest.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061640572" ignored="false" />
     <file path="$PROJECT_DIR$/../quartzTest/src/MyJob.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061699546" ignored="false" />
     <file path="/TimmingOpen.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380098195060" ignored="false" />
+    <file path="/BillingExport.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380187844567" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,10 +318,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TimmingOpen.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TimmingOpen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="50" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.3617021">
+            <state line="45" column="61" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BillingPrintAction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="56" selection-start="480" selection-end="480" vertical-scroll-proportion="0.53578335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BillingExport.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/BillingExport.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="19" selection-start="5439" selection-end="5439" vertical-scroll-proportion="-63.235294">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserGroup.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/UserGroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="8" selection-start="101" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BillingExport.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/BillingExport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="8" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -357,28 +390,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DetailEdit.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bill/action/DetailEdit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="356" column="100" selection-start="9824" selection-end="9824" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateApply.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/CreateApply.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="75" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EditUser.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="300" column="42" selection-start="13005" selection-end="13005" vertical-scroll-proportion="-75.882355">
+            <state line="300" column="42" selection-start="13005" selection-end="13005" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -416,11 +431,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/bill/tool/TimerTool.java" />
-        <option value="$PROJECT_DIR$/web/ViewApply.jsp" />
-        <option value="$PROJECT_DIR$/web/js/editApplyInfo.js" />
-        <option value="$PROJECT_DIR$/src/com/bill/action/EditUser.java" />
         <option value="$PROJECT_DIR$/web/CreateApply.jsp" />
         <option value="$PROJECT_DIR$/web/js/CreateApply.js" />
         <option value="$PROJECT_DIR$/web/js/EditUser.js" />
@@ -432,6 +442,11 @@
         <option value="$PROJECT_DIR$/web/EditUser.jsp" />
         <option value="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
         <option value="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" />
+        <option value="$PROJECT_DIR$/../test.java" />
+        <option value="E:/test.java" />
+        <option value="$PROJECT_DIR$/web/BillingExport.jsp" />
+        <option value="$PROJECT_DIR$/web/js/BillingExport.js" />
+        <option value="$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java" />
       </list>
     </option>
   </component>
@@ -546,7 +561,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -562,6 +576,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -666,6 +712,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,12 +733,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
-    <property name="Persistence.ERD.MergeInherited" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Persistence.ERD.MergeInherited" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -861,6 +908,12 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -875,12 +928,6 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Glassfish 4.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Glassfish 4.0.0" show_console_on_std_out="true" show_console_on_std_err="true">
@@ -1089,7 +1136,11 @@
       <created>1380013746270</created>
       <updated>1380013746270</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2013-09-25&#10;">
+      <created>1380100649513</created>
+      <updated>1380100649513</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1136,7 +1187,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6712095" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19283536" sideWeight="0.4913495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19283536" sideWeight="0.53287196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46712804" sideWeight="0.47878787" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1227,58 +1278,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/editApplyInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="81" selection-start="3306" selection-end="3306" vertical-scroll-proportion="0.76363635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ViewApply.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="398" column="82" selection-start="16197" selection-end="16197" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="0" selection-start="6202" selection-end="6202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/CreateApply.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="84" selection-start="13767" selection-end="13767" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/CreateApply.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="75" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/fullcalendar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="47" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/DetailEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="356" column="100" selection-start="9824" selection-end="9824" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="73" selection-start="5448" selection-end="5448" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bill/tool/BillSysTool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="13" selection-start="590" selection-end="590" vertical-scroll-proportion="0.3326886">
@@ -1316,21 +1315,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/EditUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="123" selection-start="677" selection-end="677" vertical-scroll-proportion="0.17408124">
-          <folding />
-        </state>
+        <state line="18" column="123" selection-start="677" selection-end="677" vertical-scroll-proportion="0.17408124" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="300" column="42" selection-start="13005" selection-end="13005" vertical-scroll-proportion="-75.882355">
+        <state line="300" column="42" selection-start="13005" selection-end="13005" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="40" selection-end="40" vertical-scroll-proportion="0.116054155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="50" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.3617021">
+        <state line="45" column="61" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/newApply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="8439" vertical-scroll-proportion="47.64706">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ViewUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="51" selection-start="0" selection-end="8767" vertical-scroll-proportion="-7.9411764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/UserGroup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="17" selection-start="0" selection-end="6835" vertical-scroll-proportion="-5.2941175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/BillingExport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="19" selection-start="5439" selection-end="5439" vertical-scroll-proportion="-63.235294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/UserGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="101" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/BillingExport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="56" selection-start="480" selection-end="480" vertical-scroll-proportion="0.53578335">
           <folding />
         </state>
       </provider>
