@@ -10,7 +10,8 @@
             <li><a class="ajax-link" href="ViewUser.jsp"><i class="icon-eye-open"></i><span class="hidden-tablet"> 查询用户</span></a></li>
             <li><a class="ajax-link" href="CallHistory.jsp"><i class="icon-comment"></i><span class="hidden-tablet"> 查询通话记录</span></a></li>
             <li><a class="ajax-link" href="BusinessChange.jsp"><i class="icon-edit"></i><span class="hidden-tablet"> 业务变更</span></a></li>
-            <li><a class="ajax-link" href="BillingExport.jsp"><i class="icon-font"></i><span class="hidden-tablet"> 打印派工单</span></a></li>
+            <li><a class="ajax-link" href="Monthly.jsp"><i class="icon-font"></i><span class="hidden-tablet"> 月结工作</span></a></li>
+            <li><a class="ajax-link" href="Push.jsp"><i class="icon-font"></i><span class="hidden-tablet"> 推送</span></a></li>
             <li class="nav-header hidden-tablet">设置</li>
             <li><a class="ajax-link" href="UserGroup.jsp"><i class="icon-align-justify"></i><span class="hidden-tablet">计费策略</span></a></li>
             <li><a class="ajax-link" href="Backup.jsp"><i class="icon-repeat"></i><span class="hidden-tablet">数据备份</span></a></li>
