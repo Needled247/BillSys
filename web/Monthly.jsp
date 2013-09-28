@@ -1,3 +1,5 @@
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@page language="java" pageEncoding="GBK" %>
 <%@include file="Validate.jsp"%>
 <!DOCTYPE html>
@@ -6,7 +8,6 @@
     <meta charset="GBK">
     <title>语音计费管理系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- The styles -->
     <link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
     <style type="text/css">
@@ -17,7 +18,6 @@
             padding: 9px 0;
         }
     </style>
-
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/charisma-app.css" rel="stylesheet">
     <link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
@@ -34,17 +34,22 @@
     <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='css/opa-icons.css' rel='stylesheet'>
     <link href='css/uploadify.css' rel='stylesheet'>
-
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!-- The fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico">
-
+    <%
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM");
+        String year = "";
+        String month = "";
+        String temp = sdf.format(date);
+        year = temp.substring(0,temp.indexOf("-"));
+        month = temp.substring(temp.indexOf("-")+1,temp.length());
+    %>
 </head>
-
 <body>
 <!-- topbar starts -->
 <%@include file="head.jsp"%>
@@ -83,7 +88,7 @@
                 <div class="controls">
                     <div class="input-append">
                         地域：
-                        <select style="width: 15%" id="Area">
+                        <select style="width: 10%" id="Area">
                             <option value="all">全部</option>
                             <option value="gtao_Phone_bc">长辛店</option>
                             <option value="gtao_Phone_qt">青塔</option>
@@ -93,7 +98,7 @@
                             <option value="gtao_Phone_ky">开阳</option>
                             <option value="gtao_Phone_xyy">晓月苑</option>
                         </select>
-                        <select style="width: 15%" id="UserClass">
+                        <select style="width: 10%" id="UserClass">
                             <option value="overTime">超时用户</option>
                             <option value="notFree">非免费用户</option>
                         </select>
@@ -101,8 +106,24 @@
                     </div>
                     <div class="input-append">
                         成本统计：
-                        <input placeholder="长号码" size="8" type="text" id="phoneNum">
-                        <button class="btn" type="button" onclick="SearchByNum()">开始统计</button>
+                        <input style="width: 5%" type="text" id="year" value="<%=year%>">年
+                        <!--TODO:js,server-->
+                        <select id="month" style="width: 8%">
+                            <option value="<%=month%>" hidden selected><%=month.replaceAll("0","")%>月</option>
+                            <option value="01">1月</option>
+                            <option value="02">2月</option>
+                            <option value="03">3月</option>
+                            <option value="04">4月</option>
+                            <option value="05">5月</option>
+                            <option value="06">6月</option>
+                            <option value="07">7月</option>
+                            <option value="08">8月</option>
+                            <option value="09">9月</option>
+                            <option value="10">10月</option>
+                            <option value="11">11月</option>
+                            <option value="12">12月</option>
+                        </select>
+                        <button class="btn" type="button" onclick="">开始统计</button>
                     </div>
             </div>
             <div class="clearfix"></div>
@@ -138,6 +159,7 @@
         <!--zxc-->
 </div><!--/#content.span10-->
 </div><!--/fluid-row-->
+    </div>
 <hr>
 
 <footer>
@@ -145,31 +167,10 @@
 </footer>
 
 </div><!--/.fluid-container-->
-
 <!-- external javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<%
-    String status = request.getParameter("upload");
-    if(status!=null){
-        if(status.equals("ok")||status=="ok"){
-%>
-<script type="text/javascript">
-    alert("数据导入成功！");
-    window.location.href='NumManage.jsp';
-</script>
-<%
-        }
-        else if(status.equals("fail")||status=="fail"){
-%>
-<script type="text/javascript">
-    alert("数据导入失败！");
-    window.location.href='NumManage.jsp';
-</script>
-<%
-        }
-    }
-%>
+
 <!-- jQuery -->
 <script src="js/jquery-1.7.2.min.js"></script>
 <!-- jQuery UI -->
