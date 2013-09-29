@@ -102,7 +102,7 @@
                             <option value="overTime">超时用户</option>
                             <option value="notFree">非免费用户</option>
                         </select>
-                        <button class="btn" type="button" onclick="todo()">查询</button>
+                        <button class="btn" type="button" onclick="monthly()">查询</button>
                     </div>
                     <div class="input-append">
                         成本统计：
@@ -123,7 +123,7 @@
                             <option value="11">11月</option>
                             <option value="12">12月</option>
                         </select>
-                        <button class="btn" type="button" onclick="">开始统计</button>
+                        <button class="btn" type="button" onclick="cost()">开始统计</button>
                     </div>
             </div>
             <div class="clearfix"></div>
@@ -190,7 +190,7 @@
 <script src="js/bootstrap-tab.js"></script>
 <!-- library for advanced tooltip -->
 <script src="js/bootstrap-tooltip.js"></script>
-<script src="js/NumManage.js"></script>
+<script src="js/Monthly.js"></script>
 <!-- popover effect library -->
 <script src="js/bootstrap-popover.js"></script>
 <!-- button enhancer library -->
@@ -209,15 +209,6 @@
 <script src='js/fullcalendar.min.js'></script>
 <!-- data table plugin -->
 <script src='js/jquery.dataTables.min.js'></script>
-
-<!-- chart libraries start -->
-<script src="js/excanvas.js"></script>
-<script src="js/jquery.flot.min.js"></script>
-<script src="js/jquery.flot.pie.min.js"></script>
-<script src="js/jquery.flot.stack.js"></script>
-<script src="js/jquery.flot.resize.min.js"></script>
-<!-- chart libraries end -->
-
 <!-- select or dropdown enhancer -->
 <script src="js/jquery.chosen.min.js"></script>
 <!-- checkbox, radio, and file input styler -->

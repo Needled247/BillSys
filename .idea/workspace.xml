@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c42f42-901c-47aa-96ed-56b2e921336e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/Monthly.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Monthly.jsp" afterPath="$PROJECT_DIR$/web/Monthly.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -129,7 +130,7 @@
     <file path="/tbl_billInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372298798495" ignored="false" />
     <file path="/CallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373095887745" ignored="false" />
     <file path="/CallHistory.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374300864034" ignored="false" />
-    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380331438592" ignored="false" />
+    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380417951631" ignored="false" />
     <file path="/test1.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373009916765" ignored="false" />
     <file path="/test2.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373006243222" ignored="false" />
     <file path="/Validate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376559241955" ignored="false" />
@@ -237,7 +238,8 @@
     <file path="$PROJECT_DIR$/../quartzTest/src/MyJob.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061699546" ignored="false" />
     <file path="/TimmingOpen.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380098195060" ignored="false" />
     <file path="/BillingExport.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380187844567" ignored="false" />
-    <file path="/Monthly.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380359450948" ignored="false" />
+    <file path="/Monthly.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380445488127" ignored="false" />
+    <file path="/Monthly.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380445617505" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +269,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -303,7 +306,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -389,19 +391,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monthly.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Monthly.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Monthly.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="42" selection-start="4316" selection-end="4316" vertical-scroll-proportion="0.25531915">
+            <state line="125" column="73" selection-start="5314" selection-end="5314" vertical-scroll-proportion="-17.352942">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditUser.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
+      <file leaf-file-name="Monthly.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/Monthly.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="300" column="42" selection-start="13005" selection-end="13005" vertical-scroll-proportion="0.0">
+            <state line="4" column="67" selection-start="185" selection-end="185" vertical-scroll-proportion="0.23210831">
               <folding />
             </state>
           </provider>
@@ -430,7 +432,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/js/EditUser.js" />
         <option value="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
         <option value="$PROJECT_DIR$/src/com/bill/tool/SshTool.java" />
         <option value="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" />
@@ -446,6 +447,7 @@
         <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" />
         <option value="$PROJECT_DIR$/web/menu.jsp" />
         <option value="$PROJECT_DIR$/web/Monthly.jsp" />
+        <option value="$PROJECT_DIR$/web/js/Monthly.js" />
       </list>
     </option>
   </component>
@@ -1063,7 +1065,11 @@
       <created>1380273784811</created>
       <updated>1380273784811</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2013-09-28&#10;&#10;&#10;">
+      <created>1380359470697</created>
+      <updated>1380359470697</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1112,7 +1118,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19283536" sideWeight="0.53287196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46712804" sideWeight="0.47878787" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34429064" sideWeight="0.47878787" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.36115843" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.60306644" order="4" side_tool="true" content_ui="tabs" />
@@ -1166,7 +1172,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="2013-09-27&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="2013-09-28&#10;&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1188,6 +1194,7 @@
     <MESSAGE value="2013-09-25&#10;" />
     <MESSAGE value="2013-09-26&#10;" />
     <MESSAGE value="2013-09-27&#10;&#10;" />
+    <MESSAGE value="2013-09-28&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1203,13 +1210,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/EditUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="300" column="42" selection-start="13005" selection-end="13005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="21" selection-start="40" selection-end="40" vertical-scroll-proportion="0.116054155" />
@@ -1217,23 +1217,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/newApply.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="8439" vertical-scroll-proportion="47.64706">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="8439" vertical-scroll-proportion="47.64706" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ViewUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="0" selection-end="8767" vertical-scroll-proportion="-7.9411764">
-          <folding />
-        </state>
+        <state line="9" column="51" selection-start="0" selection-end="8767" vertical-scroll-proportion="-7.9411764" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/UserGroup.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="17" selection-start="0" selection-end="6835" vertical-scroll-proportion="-5.2941175">
-          <folding />
-        </state>
+        <state line="99" column="17" selection-start="0" selection-end="6835" vertical-scroll-proportion="-5.2941175" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/BillingExport.jsp">
@@ -1292,9 +1286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/NumManage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/menu.jsp">
@@ -1306,7 +1298,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Monthly.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="42" selection-start="4316" selection-end="4316" vertical-scroll-proportion="0.25531915">
+        <state line="125" column="73" selection-start="5314" selection-end="5314" vertical-scroll-proportion="-17.352942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/Monthly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="67" selection-start="185" selection-end="185" vertical-scroll-proportion="0.23210831">
           <folding />
         </state>
       </provider>
