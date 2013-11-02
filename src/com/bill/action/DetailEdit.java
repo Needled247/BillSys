@@ -10,6 +10,7 @@ import org.hibernate.HibernateException;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -227,8 +228,8 @@ public class DetailEdit extends ActionSupport {
         }
         //编辑
         //开通时间是当天
-        if(editType.equals("update")&&opentime.equals(billSysTool.getToday())){
-            flag = sshTool.CreateUser(phoneNum,shortNum,regIp,protocal,userid);
+        if(editType.equals("update")&&(opentime.equals(billSysTool.getToday())|| Date.valueOf(opentime).before(Date.valueOf(billSysTool.getToday())))){
+            flag = sshTool.CreateUser(phoneNum, shortNum, regIp, protocal, userid);
             if(flag){
                if(this.updateDetailApply("已开通")){
                     out.print("update_success");
@@ -243,7 +244,7 @@ public class DetailEdit extends ActionSupport {
         }
         //开通时间不是当天
         else if(editType.equals("update")&&!opentime.equals(billSysTool.getToday())){
-            flag = sshTool.pre_Oppening(phoneNum,shortNum,regIp,userid,protocal);
+            flag = sshTool.pre_Oppening(phoneNum, shortNum, regIp, userid, protocal);
             if(flag){
                 if(this.updateDetailApply("未开通")){
                     out.print("update_success");

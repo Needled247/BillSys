@@ -107,7 +107,7 @@ public class BillSysDAOImpl implements BillSysDAO {
         List li = new ArrayList();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        String sql = "select * from gtao_phone_view where longNum='"+view.getLongNum()+"' and userId='"+view.getUserId()+"' and mobile='"+view.getMobile()+"'";
+        String sql = "select * from gtao_phone_view where longNum='"+view.getLongNum()+"' and userId='"+view.getUserId()+"'";
         Query query = session.createSQLQuery(sql).setResultTransformer(Transformers.aliasToBean(gtao_phone_view.class));
         try{
             li = query.list();
@@ -1708,6 +1708,33 @@ public class BillSysDAOImpl implements BillSysDAO {
             session.close();
         }
         return flag;
+    }
+
+    /**
+     * 查询65开头拨打总数
+     * @param tbl
+     * @param userClass
+     * @return
+     */
+    @Override
+    public List getOverTimeUser(String tbl, String userClass) {
+        List li = new ArrayList();
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        String sql = "SELECT ucCallerNumber,SUM(dwConversationTime) FROM "+tbl+" WHERE ucCallerNumber LIKE '65%' GROUP BY ucCallerNumber";
+        try{
+            Query query = session.createSQLQuery(sql);
+            li = query.list();
+            session.flush();
+        }
+        catch (HibernateException e){
+            e.printStackTrace();
+        }
+        finally {
+            session.clear();
+            session.close();
+        }
+        return li;
     }
 
     /**

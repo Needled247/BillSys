@@ -275,7 +275,24 @@
         <div class="control-group">
             <label class="control-label" for="Balance">赠送时间：</label>
             <div class="controls">
-                <input class="input-xlarge focused" id="Balance" type="text">
+                <select id="Balance">
+                    <option value="-1" selected>---请选择---</option>
+                    <option value="0">不赠送</option>
+                    <option value="300">300分钟</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="opentime">开通时间：</label>
+            <div class="controls">
+                <input class="input-xlarge focused" id="opentime" type="text">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="endtime">到期时间：</label>
+            <div class="controls">
+                <input class="input-xlarge focused" id="endtime" type="text">
             </div>
         </div>
 
@@ -364,6 +381,8 @@
 <script type="text/javascript">
     $(function(){
         $("#installTime").datepicker();
+        $("#opentime").datepicker();
+        $("#endtime").datepicker();
     });
 </script>
 <!-- transition / effect library -->

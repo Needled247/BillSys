@@ -87,16 +87,22 @@
             <div class="control-group">
                 <div class="controls">
                     <div class="input-append">
-                        地域：
-                        <select style="width: 10%" id="Area">
-                            <option value="all">全部</option>
-                            <option value="gtao_Phone_bc">长辛店</option>
-                            <option value="gtao_Phone_qt">青塔</option>
-                            <option value="gtao_Phone_lx">良乡</option>
-                            <option value="gtao_Phone_sh">三环</option>
-                            <option value="gtao_Phone_zy">正阳</option>
-                            <option value="gtao_Phone_ky">开阳</option>
-                            <option value="gtao_Phone_xyy">晓月苑</option>
+                        月份：
+                        <input style="width: 5%" type="text" id="monthlyYear" value="<%=year%>">年
+                        <select id="monthlyMonth" style="width: 8%">
+                            <option value="<%=month%>" hidden selected><%=month%>月</option>
+                            <option value="01">1月</option>
+                            <option value="02">2月</option>
+                            <option value="03">3月</option>
+                            <option value="04">4月</option>
+                            <option value="05">5月</option>
+                            <option value="06">6月</option>
+                            <option value="07">7月</option>
+                            <option value="08">8月</option>
+                            <option value="09">9月</option>
+                            <option value="10">10月</option>
+                            <option value="11">11月</option>
+                            <option value="12">12月</option>
                         </select>
                         <select style="width: 10%" id="UserClass">
                             <option value="overTime">超时用户</option>
@@ -107,7 +113,6 @@
                     <div class="input-append">
                         成本统计：
                         <input style="width: 5%" type="text" id="year" value="<%=year%>">年
-                        <!--TODO:js,server-->
                         <select id="month" style="width: 8%">
                             <option value="<%=month%>" hidden selected><%=month.replaceAll("0","")%>月</option>
                             <option value="01">1月</option>
@@ -187,6 +192,11 @@
 <script src="js/bootstrap-scrollspy.js"></script>
 <!-- library for creating tabs -->
 <script src="js/date_zhcn.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#monthlyDate").datepicker();
+    });
+</script>
 <script src="js/bootstrap-tab.js"></script>
 <!-- library for advanced tooltip -->
 <script src="js/bootstrap-tooltip.js"></script>

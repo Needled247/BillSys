@@ -7,17 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c42f42-901c-47aa-96ed-56b2e921336e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/Monthly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bill/action/MonthlyAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/rePrint.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/rePrintPre.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/reprint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" afterPath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" afterPath="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" afterPath="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Monthly.js" afterPath="$PROJECT_DIR$/web/js/Monthly.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Monthly.jsp" afterPath="$PROJECT_DIR$/web/Monthly.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" afterPath="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" afterPath="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/UserCalledPage.js" afterPath="$PROJECT_DIR$/web/js/UserCalledPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ViewApply.jsp" afterPath="$PROJECT_DIR$/web/ViewApply.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ViewSaleApply.jsp" afterPath="$PROJECT_DIR$/web/ViewSaleApply.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/editSaleApplyInfo.js" afterPath="$PROJECT_DIR$/web/js/editSaleApplyInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/menu.jsp" afterPath="$PROJECT_DIR$/web/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BillSys.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/struts.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376898089466" ignored="false" />
+    <file path="/struts.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382585663582" ignored="false" />
     <file path="/loginCheck.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376558938548" ignored="false" />
     <file path="/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1377850738626" ignored="false" />
     <file path="/BillSys_User.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1367826526164" ignored="false" />
-    <file path="/fragment.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379317253568" ignored="false" />
+    <file path="/fragment.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381894698381" ignored="false" />
     <file path="/BillSys_DAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1367832803474" ignored="false" />
     <file path="/UserDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373644086367" ignored="false" />
     <file path="/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1378797419050" ignored="false" />
@@ -49,14 +64,14 @@
     <file path="/gtao_phone_view.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369285798710" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/ip_phone/src/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369291949856" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/ip_phone/src/com/gtao/Servlet/IndexFree.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369634791633" ignored="false" />
-    <file path="/BillSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380270357005" ignored="false" />
-    <file path="/BillSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380270424700" ignored="false" />
+    <file path="/BillSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382582292802" ignored="false" />
+    <file path="/BillSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382586409817" ignored="false" />
     <file path="/ApplyAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369367365870" ignored="false" />
     <file path="/ApplyTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369377856044" ignored="false" />
     <file path="/ApplyToolAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369378098021" ignored="false" />
-    <file path="/ViewApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379386831768" ignored="false" />
+    <file path="/ViewApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383376268139" ignored="false" />
     <file path="/BillSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376274768270" ignored="false" />
-    <file path="/DetailEdit.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380013469441" ignored="false" />
+    <file path="/DetailEdit.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383375943985" ignored="false" />
     <file path="/editApplyInfo.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379388584773" ignored="false" />
     <file path="/IndexFree.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369634789791" ignored="false" />
     <file path="/gtao_Phone_MIME.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1369639567467" ignored="false" />
@@ -65,8 +80,8 @@
     <file path="/gtao_Phone_bc_sale.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374044023130" ignored="false" />
     <file path="/Success.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376635359201" ignored="false" />
     <file path="/Error.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373621114371" ignored="false" />
-    <file path="/ViewSaleApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376294974344" ignored="false" />
-    <file path="/editSaleApplyInfo.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376294994238" ignored="false" />
+    <file path="/ViewSaleApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383376292141" ignored="false" />
+    <file path="/editSaleApplyInfo.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382685538395" ignored="false" />
     <file path="/SaleDetailEdit.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380074088940" ignored="false" />
     <file path="/gtao_Phone_User.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373703351718" ignored="false" />
     <file path="/gtao_Phone_User.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373703372243" ignored="false" />
@@ -130,19 +145,19 @@
     <file path="/tbl_billInfo.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1372298798495" ignored="false" />
     <file path="/CallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373095887745" ignored="false" />
     <file path="/CallHistory.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374300864034" ignored="false" />
-    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380417951631" ignored="false" />
+    <file path="/Dummy.txt" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383383116502" ignored="false" />
     <file path="/test1.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373009916765" ignored="false" />
     <file path="/test2.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373006243222" ignored="false" />
     <file path="/Validate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376559241955" ignored="false" />
-    <file path="/ViewHistoryDetail.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373354187732" ignored="false" />
+    <file path="/ViewHistoryDetail.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381556567945" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/WEB-INF/web.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206129360" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/login.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373211751860" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/js/validate.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206279505" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373206443054" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileSys/src/struts.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375892379147" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/struts.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381907344290" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/hibernate.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374600117969" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375893184683" ignored="false" />
-    <file path="/FileSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375893183903" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381894824455" ignored="false" />
+    <file path="/FileSysDAO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381894772675" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/filesys_user.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207268942" ignored="false" />
     <file path="/filesys_user.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207406620" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_User.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207411722" ignored="false" />
@@ -152,19 +167,19 @@
     <file path="/checkLogin.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207609348" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSYS.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207716373" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSys.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373207724869" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894759376" ignored="false" />
-    <file path="/FileSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894757968" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/dao/FileSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381914787205" ignored="false" />
+    <file path="/FileSysDAOImpl.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381914786843" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375114260329" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileSys/web/head.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375114022196" ignored="false" />
-    <file path="/head.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376548612819" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/head.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467127911" ignored="false" />
+    <file path="/head.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467126674" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/menu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375111479815" ignored="false" />
-    <file path="/menu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380272313275" ignored="false" />
+    <file path="/menu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382589483281" ignored="false" />
     <file path="/radius.cfg.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373354375684" ignored="false" />
     <file path="/TBL_USERSINFO.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373360302811" ignored="false" />
     <file path="/sshLogin.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373514328997" ignored="false" />
     <file path="/SshTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379493585186" ignored="false" />
     <file path="/uSuccess.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373618863612" ignored="false" />
-    <file path="/logout.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376548624549" ignored="false" />
+    <file path="/logout.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467090990" ignored="false" />
     <file path="/createAccount.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375431707372" ignored="false" />
     <file path="/CreateSaleApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1373955684352" ignored="false" />
     <file path="/CreateApply.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379410912498" ignored="false" />
@@ -196,10 +211,10 @@
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/gj_file_plant.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858931233" ignored="false" />
     <file path="/gj_file_plant.hbm.xml" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374858929683" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/pojo/FileSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374859058532" ignored="false" />
-    <file path="/FileSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1374859057689" ignored="false" />
+    <file path="/FileSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381544509006" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/SearchFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375895361430" ignored="false" />
     <file path="/SearchFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375895359613" ignored="false" />
-    <file path="/UserCalledPage.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375516949179" ignored="false" />
+    <file path="/UserCalledPage.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383013787941" ignored="false" />
     <file path="/UserCallAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376276473410" ignored="false" />
     <file path="/exportUserCalled.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375427925580" ignored="false" />
     <file path="/exportDateHistory.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375427439459" ignored="false" />
@@ -209,14 +224,14 @@
     <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action/SearchFileAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894856516" ignored="false" />
     <file path="/SearchFileAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1375894837645" ignored="false" />
     <file path="/UserValidate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376798242407" ignored="false" />
-    <file path="/UserHead.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376549554955" ignored="false" />
+    <file path="/UserHead.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467101561" ignored="false" />
     <file path="/UserMenu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376636348235" ignored="false" />
     <file path="/UserCallHistory.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376633910749" ignored="false" />
     <file path="/UserCallHistory.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376619379711" ignored="false" />
     <file path="/UserBusiness.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376636793431" ignored="false" />
-    <file path="/ChangePass.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376798460305" ignored="false" />
+    <file path="/ChangePass.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381907295243" ignored="false" />
     <file path="/ChangePass.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376717665223" ignored="false" />
-    <file path="/ChangePassAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376644415406" ignored="false" />
+    <file path="/ChangePassAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381894706098" ignored="false" />
     <file path="$PROJECT_DIR$/../FileSys/web/EditFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376677504742" ignored="false" />
     <file path="/EditFile.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376677504342" ignored="false" />
     <file path="/BillingExport.jsp.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1376727263599" ignored="false" />
@@ -236,10 +251,39 @@
     <file path="/MyJob.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379058813116" ignored="false" />
     <file path="$PROJECT_DIR$/../quartzTest/src/quartzTest.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061640572" ignored="false" />
     <file path="$PROJECT_DIR$/../quartzTest/src/MyJob.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1379061699546" ignored="false" />
-    <file path="/TimmingOpen.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380098195060" ignored="false" />
+    <file path="/TimmingOpen.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383375320331" ignored="false" />
     <file path="/BillingExport.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380187844567" ignored="false" />
-    <file path="/Monthly.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380445488127" ignored="false" />
-    <file path="/Monthly.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1380445617505" ignored="false" />
+    <file path="/Monthly.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382582737888" ignored="false" />
+    <file path="/Monthly.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382582838680" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/Validate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381429553441" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserValidate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381429573389" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/EntryValidate.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381429689722" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/EntryMenu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381430002304" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/logout.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467094519" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserPage/UserHead.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467102539" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/EntryPage/EntryHead.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467110516" ignored="false" />
+    <file path="/EntryHead.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381467107240" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserPage/UserView.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381548703966" ignored="false" />
+    <file path="/UserView.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381548532782" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/tool/FileSysTool.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381544546491" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserPage/index.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381549846388" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserPage/js/UserIndex.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381563109571" ignored="false" />
+    <file path="/UserIndex.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381563107527" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381632524127" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381632524127" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2_1.xsd" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381632524127" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserPage/ChangePass.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381907295243" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/src/com/gjjt/action/ChangePassAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381896331142" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/UserPage/userMenu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381906356367" ignored="false" />
+    <file path="/userMenu.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1381906354559" ignored="false" />
+    <file path="$PROJECT_DIR$/../test/web/js/web.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382521930177" ignored="false" />
+    <file path="/web.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382521908399" ignored="false" />
+    <file path="/MonthlyAction.java" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382588488035" ignored="false" />
+    <file path="/rePrintPre.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382589723198" ignored="false" />
+    <file path="/reprint.js" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382589408384" ignored="false" />
+    <file path="/rePrint.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1382589533651" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileSys/web/Setting.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383275794513" ignored="false" />
+    <file path="/Setting.jsp" changelist="76c42f42-901c-47aa-96ed-56b2e921336e" time="1383275741318" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +313,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -306,6 +349,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -319,91 +363,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TimmingOpen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="61" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BillingPrintAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BillingExport.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/BillingExport.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="19" selection-start="5439" selection-end="5439" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserGroup.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/UserGroup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="8" selection-start="101" selection-end="318" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BillingExport.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/BillingExport.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BillSysDAOImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="20" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0">
+            <state line="1467" column="0" selection-start="47665" selection-end="47665" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BillSysDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java">
+      <file leaf-file-name="UserCallAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/action/UserCallAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="58" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.0">
+            <state line="33" column="32" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/menu.jsp">
+      <file leaf-file-name="TimmingOpen.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="47" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
+            <state line="20" column="13" selection-start="441" selection-end="441" vertical-scroll-proportion="0.058027077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monthly.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Monthly.jsp">
+      <file leaf-file-name="EditUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="73" selection-start="5314" selection-end="5314" vertical-scroll-proportion="-17.352942">
+            <state line="23" column="13" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monthly.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/Monthly.js">
+      <file leaf-file-name="reprint.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/reprint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="67" selection-start="185" selection-end="185" vertical-scroll-proportion="0.23210831">
+            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewSaleApply.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ViewSaleApply.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="278" column="47" selection-start="11281" selection-end="11281" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuartzManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editSaleApplyInfo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/editSaleApplyInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="26" selection-start="2802" selection-end="2816" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetailEdit.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bill/action/DetailEdit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewApply.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ViewApply.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="261" column="47" selection-start="10613" selection-end="10613" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -432,22 +476,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
-        <option value="$PROJECT_DIR$/src/com/bill/tool/SshTool.java" />
-        <option value="$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java" />
-        <option value="$PROJECT_DIR$/web/EditUser.jsp" />
-        <option value="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
-        <option value="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" />
-        <option value="$PROJECT_DIR$/../test.java" />
-        <option value="E:/test.java" />
-        <option value="$PROJECT_DIR$/web/BillingExport.jsp" />
-        <option value="$PROJECT_DIR$/web/js/BillingExport.js" />
-        <option value="$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java" />
-        <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java" />
-        <option value="$PROJECT_DIR$/web/menu.jsp" />
         <option value="$PROJECT_DIR$/web/Monthly.jsp" />
         <option value="$PROJECT_DIR$/web/js/Monthly.js" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/com/bill/action/MonthlyAction.java" />
+        <option value="$PROJECT_DIR$/web/js/reprint.js" />
+        <option value="$PROJECT_DIR$/web/menu.jsp" />
+        <option value="$PROJECT_DIR$/web/rePrintPre.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java" />
+        <option value="$PROJECT_DIR$/web/rePrint.jsp" />
+        <option value="$PROJECT_DIR$/web/js/editSaleApplyInfo.js" />
+        <option value="$PROJECT_DIR$/web/js/UserCalledPage.js" />
+        <option value="$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java" />
+        <option value="$PROJECT_DIR$/src/com/bill/action/DetailEdit.java" />
+        <option value="$PROJECT_DIR$/web/ViewApply.jsp" />
+        <option value="$PROJECT_DIR$/web/ViewSaleApply.jsp" />
       </list>
     </option>
   </component>
@@ -562,6 +606,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -625,15 +670,102 @@
               <option name="myItemId" value="bill" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BillSys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bill" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
@@ -668,12 +800,12 @@
       <recent name="C:\Users\HP\Desktop\BillSys\src" />
       <recent name="C:\Users\HP\Desktop\BillSys\src\com\bill\pojo" />
     </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="com.bill.pojo" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Desktop\BillSys\web\js" />
       <recent name="C:\Users\HP\Desktop\BillSys\src\com\bill\pojo" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.bill.pojo" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
@@ -934,6 +1066,7 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_6_0_BillSys" />
         <option name="HTTP_PORT" value="8008" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -1069,7 +1202,11 @@
       <created>1380359470697</created>
       <updated>1380359470697</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2013-09-29&#10;&#10;&#10;">
+      <created>1380445640810</created>
+      <updated>1380445640810</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1093,8 +1230,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34083045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1105,10 +1242,9 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50865054" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.22146508" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3615917" sideWeight="0.5159091" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37716264" sideWeight="0.51829267" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.67291313" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19166666" sideWeight="0.22827938" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1116,9 +1252,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6712095" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19283536" sideWeight="0.53287196" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20960365" sideWeight="0.56228375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34429064" sideWeight="0.47878787" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43771628" sideWeight="0.4809451" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18333334" sideWeight="0.36115843" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.60306644" order="4" side_tool="true" content_ui="tabs" />
@@ -1127,6 +1263,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1172,7 +1309,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="2013-09-28&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="2013-09-29&#10;&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1195,6 +1332,7 @@
     <MESSAGE value="2013-09-26&#10;" />
     <MESSAGE value="2013-09-27&#10;&#10;" />
     <MESSAGE value="2013-09-28&#10;&#10;&#10;" />
+    <MESSAGE value="2013-09-29&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1210,102 +1348,108 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/test.java">
+    <entry file="file://$PROJECT_DIR$/web/rePrintPre.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="40" selection-end="40" vertical-scroll-proportion="0.116054155" />
+        <state line="127" column="16" selection-start="4176" selection-end="4176" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/newApply.jsp">
+    <entry file="file://$PROJECT_DIR$/web/rePrint.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="8439" vertical-scroll-proportion="47.64706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ViewUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="0" selection-end="8767" vertical-scroll-proportion="-7.9411764" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/UserGroup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="17" selection-start="0" selection-end="6835" vertical-scroll-proportion="-5.2941175" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/BillingExport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="19" selection-start="5439" selection-end="5439" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/UserGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="101" selection-end="318" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/BillingExport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/action/BillingPrintAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="61" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="20" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0">
+        <state line="81" column="131" selection-start="2854" selection-end="2854" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bill/action/SaleDetailEdit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="73" selection-start="5448" selection-end="5448" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="58" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.0">
+        <state line="232" column="57" selection-start="5130" selection-end="5130" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/NumManage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/bill/dao/BillSysDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
+        <state line="1467" column="0" selection-start="47665" selection-end="47665" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Monthly.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/reprint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="73" selection-start="5314" selection-end="5314" vertical-scroll-proportion="-17.352942">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/Monthly.js">
+    <entry file="file://$PROJECT_DIR$/web/js/UserCalledPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="185" selection-end="185" vertical-scroll-proportion="0.23210831">
+        <state line="85" column="21" selection-start="3101" selection-end="3101" vertical-scroll-proportion="0.35714287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/tool/BillingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="141" selection-start="8386" selection-end="8386" vertical-scroll-proportion="3.1964285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/UserCallAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="32" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/EditUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/editApplyInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="10" selection-end="10" vertical-scroll-proportion="-4.8162475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/editSaleApplyInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="26" selection-start="2802" selection-end="2816" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/action/DetailEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ViewApply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="261" column="47" selection-start="10613" selection-end="10613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ViewSaleApply.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="278" column="47" selection-start="11281" selection-end="11281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/tool/QuartzManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bill/Job/TimmingOpen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="441" selection-end="441" vertical-scroll-proportion="0.058027077">
           <folding />
         </state>
       </provider>

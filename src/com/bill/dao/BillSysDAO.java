@@ -66,4 +66,5 @@ public interface BillSysDAO {
     public boolean removeUser(BillSys_User user);
     public List getUserInfoByNum(String longNum);
     public boolean updateUserStatus(String status,int id);
+    public List getOverTimeUser(String tbl,String userClass);
 }

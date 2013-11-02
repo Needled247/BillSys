@@ -37,6 +37,7 @@ public class TimmingOpen implements Job{
                 //调用开通方法
                 if(register.pre_OpenningCompetence(user.getShortNum(),"open")){
                     user.setStatus("已开通");
+                    System.out.println(user.getUserid()+"已开通");
                     impl.updateUserInfo(user);
                 }
             }
@@ -45,6 +46,7 @@ public class TimmingOpen implements Job{
                 //关闭权限
                 if(register.pre_OpenningCompetence(user.getShortNum(),"close")){
                     user.setStatus("停机");
+                    System.out.println(user.getUserid()+"已停机");
                     impl.updateUserInfo(user);
                 }
             }

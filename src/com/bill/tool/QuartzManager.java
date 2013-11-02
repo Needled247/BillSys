@@ -29,7 +29,7 @@ public class QuartzManager {
                     */
             //每天0点执行检查，日期匹配则执行计划任务。
             CronTrigger trigger = TriggerBuilder.newTrigger().withIdentity(TRIGGER_NAME,TRIGGER_GROUP)
-                    .withSchedule(cronSchedule("00 53 16 * * ?")).build();
+                    .withSchedule(cronSchedule("00 00 00 * * ?")).build();
             JobDetail jobDetail = JobBuilder.newJob(TimmingOpen.class).withIdentity(JOB_NAME,JOB_GROUP).build();
             scheduler.scheduleJob(jobDetail,trigger);
             scheduler.start();

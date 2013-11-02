@@ -3,7 +3,13 @@ $(function(){
     var date = new Date();
     var year = date.getFullYear();
     var month = date.getMonth()+1;
-    var thisMonth = year + '0' + month;
+    var thisMonth;
+    if(month<10){
+        thisMonth = year + '0' + month;
+    }
+    else{
+        thisMonth = year +''+ month;
+    }
     $("#month").attr("value",month+'ÔÂ');
     $("#month").val('0'+month);
     $("#year").attr("value",year);
@@ -90,7 +96,13 @@ function getThisMonthCalled(){
     var date = new Date();
     var year = date.getFullYear();
     var month = date.getMonth()+1;
-    var thisMonth = year + '0' + month;
+    var thisMonth;
+    if(month<10){
+        thisMonth = year + '0' + month;
+    }
+    else{
+        thisMonth = year +''+ month;
+    }
     $("#month").attr("value",month+'ÔÂ');
     $("#month").val('0'+month);
     $("#year").attr("value",year);

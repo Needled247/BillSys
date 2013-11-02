@@ -38,5 +38,6 @@
         <action name="UserCallAction" class="com.bill.action.UserCallAction"/>
         <action name="ChangePassAction" class="com.bill.action.ChangePassAction"/>
         <action name="BillingPrintAction" class="com.bill.action.BillingPrintAction"/>
+        <action name="MonthlyAction" class="com.bill.action.MonthlyAction"/>
     </package>
 </struts>

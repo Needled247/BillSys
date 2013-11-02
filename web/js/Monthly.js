@@ -1,8 +1,9 @@
 function monthly(){
-    var area = $("#Area").val();
+    var year = $("#monthlyYear").val();
+    var month = $("#monthlyMonth").val();
     var userClass = $("#UserClass").val();
     var type = "out";
-    $.post("MonthlyAction",{Area:area,userClass:userClass,type:type},function(data){
+    $.post("MonthlyAction",{year:year,month:month,userClass:userClass,type:type},function(data){
         //TODO
     })
 }

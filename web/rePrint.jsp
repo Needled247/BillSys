@@ -76,13 +76,11 @@
     </ul>
 </div>
 <%
-    String longNum = request.getParameter("pnum");
-    String userId = request.getParameter("userid");
-    String mobile = request.getParameter("mobile");
+    String longNum = request.getParameter("longNum");
+    String userId = request.getParameter("account");
     gtao_phone_view view = new gtao_phone_view();
     view.setLongNum(longNum);
     view.setUserId(userId);
-    view.setMobile(mobile);
     List li = new ArrayList();
     li = new BillSysDAOImpl().getApplyDetail(view);
     Iterator it = li.iterator();
@@ -258,11 +256,7 @@
         <div class="control-group">
             <label class="control-label" for="Balance">赠送时间：</label>
             <div class="controls">
-                <select id="Balance">
-                    <option value="-1" selected>---请选择---</option>
-                    <option value="0">不赠送</option>
-                    <option value="300">300分钟</option>
-                </select>
+                <input class="input-xlarge focused" id="Balance" type="text" placeholder="请填写数字，不赠送请为空">
             </div>
         </div>
         <div class="control-group">
@@ -327,10 +321,8 @@
         </div>
 
         <div class="form-actions">
-            <button type="button" class="btn btn-primary" id="btn_save" onclick="editApplyInfo()">开户</button>
             <button type="button" id="btn_print" class="btn" onclick="PagePrint()">打印</button>
-            <button type="button" class="btn btn-danger" id="btn_init" onclick="return initApplyInfo()">号码初始化</button>
-            <button type="button" class="btn btn-success" onclick="window.location.href='newApply.jsp'">
+            <button type="button" class="btn btn-success" onclick="window.location.href='rePrintPre.jsp'">
                 <i class="icon-chevron-left icon-white"></i>返回</button>
         </div>
     </fieldset>

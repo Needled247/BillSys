@@ -84,11 +84,13 @@ function editSaleApplyInfo(){
     var finalUser = $("#finalUser").val();
     var gate = $("#gate").val();
     var tbl = $("#tbl").val();
+    var opentime = $("#opentime").val();
+    var endtime = $("#endtime").val();
     $("#btn_save").attr('disabled',"true");
     $("#btn_print").attr('disabled',"true");
     $("#btn_init").attr('disabled',"true");
     $("#btn_back").attr('disabled',"true");
-    $.post("SaleDetailEdit",{editType:editType,phoneNum:phoneNum,userid:userId,shortNum:shortNum,mobile:mobile,phoneIp:phoneIp,vlan:vlan,installer:installer,installTime:installTime,finalNum:finalNum,finalUser:finalUser,money:money,pay:pay,userGroup:userGroup,Balance:Balance,protocal:protocal,tbl:tbl,gate:gate},function(data){        if(data=='update_success'){
+    $.post("SaleDetailEdit",{editType:editType,phoneNum:phoneNum,userid:userId,shortNum:shortNum,mobile:mobile,phoneIp:phoneIp,vlan:vlan,installer:installer,installTime:installTime,finalNum:finalNum,finalUser:finalUser,money:money,pay:pay,userGroup:userGroup,Balance:Balance,protocal:protocal,tbl:tbl,gate:gate,opentime:opentime,endtime:endtime},function(data){        if(data=='update_success'){
             $("#btn_save").removeAttr("disabled");
             $("#btn_print").removeAttr("disabled");
             $("#btn_init").removeAttr("disabled");
