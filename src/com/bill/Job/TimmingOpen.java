@@ -1,6 +1,6 @@
 package com.bill.Job;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.gtao_Phone_User;
 import com.bill.tool.BillSysTool;
 import com.bill.tool.SshTool;
@@ -19,16 +19,20 @@ import java.util.List;
  * Time: 下午5:20
  */
 public class TimmingOpen implements Job{
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
+
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         SshTool register = new SshTool();
         List li = new ArrayList();
-        li = impl.getAllUser();
+        li = billService.getAllUser();
         Iterator iterator = li.iterator();
         gtao_Phone_User user = null;
         BillSysTool tool = new BillSysTool();
-        BillSysDAOImpl impl = new BillSysDAOImpl();
         String today = tool.getToday();
         while (iterator.hasNext()){
             user = (gtao_Phone_User)iterator.next();
@@ -38,7 +42,7 @@ public class TimmingOpen implements Job{
                 if(register.pre_OpenningCompetence(user.getShortNum(),"open")){
                     user.setStatus("已开通");
                     System.out.println(user.getUserid()+"已开通");
-                    impl.updateUserInfo(user);
+                    billService.updateUserInfo(user);
                 }
             }
             //到期时间匹配
@@ -47,7 +51,7 @@ public class TimmingOpen implements Job{
                 if(register.pre_OpenningCompetence(user.getShortNum(),"close")){
                     user.setStatus("停机");
                     System.out.println(user.getUserid()+"已停机");
-                    impl.updateUserInfo(user);
+                    billService.updateUserInfo(user);
                 }
             }
         }

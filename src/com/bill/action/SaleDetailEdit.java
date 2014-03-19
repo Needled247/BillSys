@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.BillSys_User;
 import com.bill.pojo.gtao_Phone_User;
 import com.bill.pojo.gtao_Phone_bc_sale;
@@ -42,7 +42,15 @@ public class SaleDetailEdit extends ActionSupport {
     private String Balance;
     private String opentime;
     private String endtime;
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getOpentime() {
         return opentime;
@@ -301,7 +309,7 @@ public class SaleDetailEdit extends ActionSupport {
         sale.setMoney(money);
         sale.setIsPay(pay);
         sale.setGate(gate);
-        flag = impl.editSaleApplyDetail(sale,finalNum,finalUser,tbl);
+        flag = billService.editSaleApplyDetail(sale,finalNum,finalUser,tbl);
         if(flag){
             gtao_Phone_User user = new gtao_Phone_User();
             user.setLongNum(phoneNum);
@@ -320,13 +328,13 @@ public class SaleDetailEdit extends ActionSupport {
             user.setStatus(status);
             user.setItime(new BillSysTool().getCurrentTime());
             try{
-                flag = impl.userRegister(user);
+                flag = billService.userRegister(user);
                 BillSys_User userInfo = new BillSys_User();
                 userInfo.setUsername(userid);
                 userInfo.setPassword(phoneNum);
                 userInfo.setLevel(2);
                 //addUser
-                flag = impl.addUser(userInfo);
+                flag = billService.addUser(userInfo);
             }
             catch (HibernateException e){
                 flag = false;
@@ -342,7 +350,7 @@ public class SaleDetailEdit extends ActionSupport {
      */
     public boolean initSaleDetailApply(){
         boolean flag = false;
-        flag = impl.initSaleApplyDetail(finalNum,finalUser,tbl);
+        flag = billService.initSaleApplyDetail(finalNum,finalUser,tbl);
         return flag;
     }
 }

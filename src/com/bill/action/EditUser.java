@@ -1,5 +1,6 @@
 package com.bill.action;
 
+import com.bill.dao.BillSysDAO;
 import com.bill.dao.BillSysDAOImpl;
 import com.bill.pojo.BillSys_User;
 import com.bill.pojo.gtao_Phone_User;
@@ -40,6 +41,16 @@ public class EditUser extends ActionSupport {
     private String protocal;
     private String gate;
     private String opentime;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
+
     private List userGroupList = new ArrayList();
 
     public String getOpentime() {
@@ -189,7 +200,6 @@ public class EditUser extends ActionSupport {
     @Override
     public String execute() throws Exception {
         SshTool tool = new SshTool();
-        BillSysDAOImpl impl = new BillSysDAOImpl();
         HttpServletResponse response = ServletActionContext.getResponse();
         response.setContentType("text/html;charset=GBK");
         PrintWriter out = response.getWriter();
@@ -216,7 +226,7 @@ public class EditUser extends ActionSupport {
             user.setTbl(tbl);
             user.setGate(gate);
             user.setEmail(opentime);
-            boolean flag = impl.updateUserInfo(user);
+            boolean flag = billService.updateUserInfo(user);
             if(flag){
                 out.print("success");
             }
@@ -241,19 +251,17 @@ public class EditUser extends ActionSupport {
             user.setLongNum(phoneNum);
             if(tbl.contains("sale")){
                 if(tool.DelUser(phoneNum, shortNum, ipadd, protocal, userId)){
-                    if(impl.delInfoFromUser(id,phoneNum)){
-                        flag = impl.initSaleApplyDetail(phoneNum, userId, tbl);
+                    if(billService.delInfoFromUser(id,phoneNum)){
+                        flag = billService.initSaleApplyDetail(phoneNum, userId, tbl);
                         //REMOVE USER
-                        flag = impl.removeUser(userInfo);
                     }
                 }
             }
             else {
                 if(tool.DelUser(phoneNum,shortNum,ipadd,protocal,userId)){
-                    if(impl.delInfoFromUser(id,phoneNum)){
-                        flag = impl.initApplyDetail(tbl, phoneNum, userId);
+                    if(billService.delInfoFromUser(id,phoneNum)){
+                        flag = billService.initApplyDetail(tbl, phoneNum, userId);
                         //REMOVE USER
-                        flag = impl.removeUser(userInfo);
                     }
                 }
             }

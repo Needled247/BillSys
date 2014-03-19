@@ -4,6 +4,9 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -81,8 +84,10 @@
             specialtimebegin1="",specialtimeend1="",specialtimebegin2="",specialtimeend2="",specialtimebegin3="",
             specialtimeend3="",specialtimefee1="",specialtimefee2="",specialtimefee3="";
     List li = new ArrayList();
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billSysDAO = ctx.getBean("billService",BillSysDAO.class);
     if(prefix!=null){
-        li = new BillSysDAOImpl().getCelueByPrefix(prefix,userGroup);
+        li = billSysDAO.getCelueByPrefix(prefix,userGroup);
     }
     Iterator it = li.iterator();
     gtao_phone_celue celue = new gtao_phone_celue();
@@ -108,7 +113,7 @@
         specialtimefee2 = celue.getSPECIALTIMEFEE2();
         specialtimefee3 = celue.getSPECIALTIMEFEE3();
     }
-    List list = new BillSysDAOImpl().getAllFeeProfile();
+    List list = billSysDAO.getAllFeeProfile();
 %>
 <div class="row-fluid sortable ui-sortable">
 <div class="box span12" style="">

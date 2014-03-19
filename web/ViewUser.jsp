@@ -1,8 +1,4 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
-<%@ page import="com.bill.pojo.gtao_Phone_User" %>
-<%@ page import="java.util.Iterator" %>
-<%@ page import="java.util.List" %>
-<%@ page import="com.bill.tool.BillSysTool" %>
+
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -78,63 +74,23 @@
     <h2><i class="icon-user"></i> 查看用户</h2>
 </div>
 <div class="box-content">
-<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
-<table class="table table-striped table-bordered bootstrap-datatable datatable dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" style="width: 100%">
+<div id="viewUserBlock" class="dataTables_wrapper" role="grid">
+<table class="table table-striped table-bordered bootstrap-datatable dataTable" aria-describedby="DataTables_Table_0_info" id="viewUser"  style="width: 100%">
 <thead>
-<tr role="row">
-    <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending">ID</th>
-    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">用户账号</th>
-    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">长号码</th>
-    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">用户组</th>
-    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">开户时间</th>
-    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">所属营业厅</th>
-    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">操作</th>
-</tr>
-</thead>
-    <%
-        List li = new BillSysDAOImpl().getAllUser();
-        Iterator it = li.iterator();
-        gtao_Phone_User user = null;%>
-<tbody role="alert" aria-live="polite" aria-relevant="all">
-    <%
-        int flag = 2;
-        while (it.hasNext()){
-            user = (gtao_Phone_User)it.next();
-            String table = user.getTbl();
-            if(user.getTbl()==null){
-                table = "";
-            }
-            if(flag%2==0){%>
-    <tr class="odd">
-    <% }else {%>
-    <tr class="even">
-        <%}%>
-        <td class="  sorting_1"><%=user.getId()%></td>
-        <td class="center "><%=user.getUserid()%></td>
-        <td class="center "><%=user.getLongNum()%></td>
-        <td class="center "><%=user.getTactics()%></td>
-        <td class="center "><%=user.getItime()%></td>
-        <!--span class="label label-warning">warn</span-->
-        <td class="center "><%=new BillSysTool().tblName2departmetName(table)%></td>
-         <input type="hidden" id="id" value="<%=user.getId()%>">
-        <input type="hidden" id="longNum" value="<%=user.getLongNum()%>">
-        <input type="hidden" id="tbl" value="<%=user.getTbl()%>">
-        <input type="hidden" id="userid" value="<%=user.getUserid()%>">
-        <td class="center " style="width: 20%">
-            <a class="btn btn-success" href="EditUser.jsp?phoneNum=<%=user.getLongNum()%>&userid=<%=user.getUserid()%>">
-                <i class="icon-zoom-in icon-white"></i>查看/编辑</a>
-            <a class="btn btn-warning" href="UserCalledPage.jsp?userid=<%=user.getUserid()%>&longNum=<%=user.getLongNum()%>&shortNum=<%=user.getShortNum()%>">
-                <i class="icon-zoom-in icon-white"></i>通话明细</a>
-        </td>
+    <tr role="row">
+        <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending">ID</th>
+        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">用户账号</th>
+        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">长号码</th>
+        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">用户组</th>
+        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">开户时间</th>
+        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">所属营业厅</th>
+        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 20%">操作</th>
     </tr>
-        <%flag++;}%>
-</tbody>
+    </thead>
+    <tbody role="alert" aria-live="polite" aria-relevant="all">
+
+    </tbody>
 </table>
-<div class="row-fluid">
-    <div class="span12">
-        <div class="dataTables_info" id="DataTables_Table_0_info"></div>
-    </div>
-</div>
 </div>
 </div>
 </div><!--/span-->

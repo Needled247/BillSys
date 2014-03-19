@@ -7,8 +7,12 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="bmuSessionFactory" value="BMU" />
+          <unit-entry name="hibernate.cfg.xml" value="b1395f6d-0caa-4121-95eb-8b1429266116" />
+          <unit-entry name="radius.cfg.xml" value="c4a575fa-7eeb-4184-9d97-2e02e83bae4a" />
+          <unit-entry name="radiusSessionFactory" value="RADIUS" />
         </datasource-map>
+        <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/radius.cfg.xml" />
       </configuration>
@@ -27,10 +31,19 @@
           <fileset id="s2fileset" name="Default File Set " removed="false">
             <file>file://$MODULE_DIR$/src/struts.xml</file>
             <file>jar://$MODULE_DIR$/lib/struts2-core.jar!/struts-default.xml</file>
+            <file>file://$MODULE_DIR$/src/struts.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
       </facet>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/applicationContext.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -49,6 +62,9 @@
     <orderEntry type="library" name="ojdbc14" level="project" />
     <orderEntry type="library" name="ganymed-ssh2-build210" level="project" />
     <orderEntry type="library" name="quartz-2.2.0" level="project" />
+    <orderEntry type="library" name="Spring-3.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="struts2-spring-plugin-2.3.16" level="project" />
+    <orderEntry type="library" name="json-lib-2.4-jdk15" level="project" />
   </component>
 </module>
 

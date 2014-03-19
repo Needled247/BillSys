@@ -1,7 +1,7 @@
 package com.bill.action;
 
 import com.bill.bean.tbl_billInfo;
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.tool.BillSysTool;
 import com.bill.tool.BillingManager;
 import com.opensymphony.xwork2.ActionSupport;
@@ -30,9 +30,18 @@ public class UserCallAction extends ActionSupport {
     private String shortNum;
     private String userGroup;
     private String balance;
-    private BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
     BillingManager manager = new BillingManager();
     BillSysTool tool = new BillSysTool();
+    HttpServletRequest request = ServletActionContext.getRequest();
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getBalance() {
         return balance;
@@ -100,6 +109,7 @@ public class UserCallAction extends ActionSupport {
 
     @Override
     public String execute(){
+        shortNum = "6"+longNum.substring(3,longNum.length());
         if(type.equals("init")){
             try{
                 this.UserCalledPageInit();
@@ -145,9 +155,9 @@ public class UserCallAction extends ActionSupport {
         response.setContentType("text/json;charset=GBK");
         PrintWriter out = response.getWriter();
         List li = new ArrayList();
-        li = impl.getUserCalledDetail(longNum,shortNum,month,null,null);
+        li = billService.getUserCalledDetail(longNum,shortNum,month,null,null);
         List<tbl_billInfo> listExport = new ArrayList<tbl_billInfo>();
-        String convTime = impl.getMonthConversation(month,longNum,shortNum,0);
+        String convTime = billService.getMonthConversation(month,longNum,shortNum,0);
         Iterator it = li.iterator();
         tbl_billInfo billInfo = null;
         StringBuilder sb = new StringBuilder();
@@ -189,7 +199,6 @@ public class UserCallAction extends ActionSupport {
             sb.deleteCharAt(sb.lastIndexOf(","));
         }
         sb.append("]");
-        HttpServletRequest request = ServletActionContext.getRequest();
         request.getSession().setAttribute("userCalledList",listExport);
         out.println(sb);
         out.flush();
@@ -205,12 +214,14 @@ public class UserCallAction extends ActionSupport {
         response.setContentType("text/json;charset=GBK");
         PrintWriter out = response.getWriter();
         List li = new ArrayList();
-        li = impl.getUserCalledDetail(longNum,shortNum,null,null,null);
+        List<tbl_billInfo> listExport = new ArrayList<tbl_billInfo>();
+        li = billService.getUserCalledDetail(longNum,shortNum,null,null,null);
         Iterator it = li.iterator();
         tbl_billInfo billInfo = null;
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         while (it.hasNext()){
+            tbl_billInfo billList = new tbl_billInfo();
             billInfo = (tbl_billInfo)it.next();
             sb.append("[")
                     .append("\""+billInfo.getUcCallerNumber()+"\",")
@@ -221,11 +232,19 @@ public class UserCallAction extends ActionSupport {
                     .append("\"" + tool.second2Minute(billInfo.getDwConversationTime()) + "\",")
                     .append("\"--\"")
                     .append("],");
+            billList.setUcCallerNumber(billInfo.getUcCallerNumber());
+            billList.setUcCalledNumber(billInfo.getUcCalledNumber());
+            billList.setUcCallAttribute(billInfo.getUcCallAttribute());
+            billList.setStartTime(billInfo.getStartTime());
+            billList.setEndTime(billInfo.getEndTime());
+            billList.setDwConversationTime( tool.second2Minute(billInfo.getDwConversationTime()));
+            listExport.add(billList);
         }
         if(sb.length()>2){
             sb.deleteCharAt(sb.lastIndexOf(","));
         }
         sb.append("]");
+        request.getSession().setAttribute("userCalledList",listExport);
         out.println(sb);
         out.flush();
         out.close();
@@ -240,12 +259,14 @@ public class UserCallAction extends ActionSupport {
         response.setContentType("text/json;charset=GBK");
         PrintWriter out = response.getWriter();
         List li = new ArrayList();
-        li = impl.getUserCalledDetail(longNum,shortNum,null,startTime,endTime);
+        List<tbl_billInfo> listExport = new ArrayList<tbl_billInfo>();
+        li = billService.getUserCalledDetail(longNum,shortNum,null,startTime,endTime);
         Iterator it = li.iterator();
         tbl_billInfo billInfo = null;
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         while (it.hasNext()){
+            tbl_billInfo billList = new tbl_billInfo();
             billInfo = (tbl_billInfo)it.next();
             sb.append("[")
                     .append("\""+billInfo.getUcCallerNumber()+"\",")
@@ -256,11 +277,19 @@ public class UserCallAction extends ActionSupport {
                     .append("\"" + tool.second2Minute(billInfo.getDwConversationTime()) + "\",")
                     .append("\"--\"")
                     .append("],");
+            billList.setUcCallerNumber(billInfo.getUcCallerNumber());
+            billList.setUcCalledNumber(billInfo.getUcCalledNumber());
+            billList.setUcCallAttribute(billInfo.getUcCallAttribute());
+            billList.setStartTime(billInfo.getStartTime());
+            billList.setEndTime(billInfo.getEndTime());
+            billList.setDwConversationTime( tool.second2Minute(billInfo.getDwConversationTime()));
+            listExport.add(billList);
         }
         if(sb.length()>2){
             sb.deleteCharAt(sb.lastIndexOf(","));
         }
         sb.append("]");
+        request.getSession().setAttribute("userCalledList",listExport);
         out.println(sb);
         out.flush();
         out.close();

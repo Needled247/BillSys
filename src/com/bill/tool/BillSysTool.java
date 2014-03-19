@@ -99,7 +99,7 @@ public class BillSysTool {
      * @param tbl
      * @return
      */
-    public String tblName2departmetName(String tbl){
+    public static String tblName2departmetName(String tbl){
         String department = "";
         if(tbl.equals("gtao_Phone_zy")){
             department = "ÕýÑô";

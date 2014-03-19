@@ -1,8 +1,10 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_Phone_User" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="UserValidate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -63,7 +65,9 @@
                 List li = new ArrayList();
                 gtao_Phone_User user = null;
                 String username = session.getAttribute("uid").toString();
-                li = new BillSysDAOImpl().getUserById(username);
+                ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+                BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+                li = billService.getUserById(username);
                 Iterator it = li.iterator();
                 String userid="",mobile="",longNum="",shortNum="",userGroup="",balance="";
                 while (it.hasNext()){

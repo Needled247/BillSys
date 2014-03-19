@@ -1,7 +1,9 @@
 <%@ page import="com.bill.bean.tbl_billInfo" %>
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -65,7 +67,9 @@
                 String startTime = request.getParameter("startTime");
                 startTime = startTime.replaceAll("-","");
                 startTime = startTime.substring(0,6);
-                List li = new BillSysDAOImpl().getCallHistoryById(id,startTime);
+                ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+                BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+                List li = billService.getCallHistoryById(id,startTime);
                 Iterator it = li.iterator();
                 tbl_billInfo bill = new tbl_billInfo();
                 while (it.hasNext()){

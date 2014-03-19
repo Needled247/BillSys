@@ -1,8 +1,10 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_Phone_User" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -67,7 +69,9 @@
         gtao_Phone_User user = new gtao_Phone_User();
         user.setUserid(request.getParameter("userid"));
         user.setLongNum(request.getParameter("longNum"));
-        li = new BillSysDAOImpl().getUserByNum(user);
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+        li = billService.getUserByNum(user);
         Iterator it = li.iterator();
         String userid="",mobile="",longNum="",shortNum="",userGroup="",balance="";
         user = null;
@@ -147,6 +151,7 @@
                             <select id="year" style="width: 100px">
                                 <option value="2012">2012年</option>
                                 <option value="2013">2013年</option>
+                                <option value="2014" selected>2014年</option>
                             </select>&nbsp;
                             月份：
                             <select id="month" style="width: 80px">

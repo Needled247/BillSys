@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.gtao_phone_group;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
@@ -24,6 +24,15 @@ public class UserGroup extends ActionSupport {
     private String celueTbl;
     private String groupDetail;
     private String editType;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public int getId() {
         return id;
@@ -75,7 +84,7 @@ public class UserGroup extends ActionSupport {
             response.setContentType("text/json;charset=GBK");
             PrintWriter out = response.getWriter();
             List li = new ArrayList();
-            li = new BillSysDAOImpl().getAllGroup();
+            li = billService.getAllGroup();
             Iterator it = li.iterator();
             StringBuilder sb = new StringBuilder();
             gtao_phone_group group = new gtao_phone_group();
@@ -103,12 +112,12 @@ public class UserGroup extends ActionSupport {
             group.setGroupDetail(groupDetail);
             String celueTbl = "gtao_phone_celue"+userGroup;
             group.setCelueTbl(celueTbl);
-            boolean flag = new BillSysDAOImpl().createCelueTbl(celueTbl);
+            boolean flag = billService.createCelueTbl(celueTbl);
             HttpServletResponse response = ServletActionContext.getResponse();
             response.setContentType("text/html;charset=GBK");
             PrintWriter out = response.getWriter();
             if(flag){
-                 if(new BillSysDAOImpl().newUserGroup(group)){
+                 if(billService.newUserGroup(group)){
                      out.print("success");
                  }
             }
@@ -122,7 +131,7 @@ public class UserGroup extends ActionSupport {
          * editType==del,删除用户组策略
          */
         if(editType.equals("del")||editType=="del"){
-            boolean flag = new BillSysDAOImpl().deleteUserGroup(userGroup);
+            boolean flag = billService.deleteUserGroup(userGroup);
             if(flag){
                 HttpServletResponse response = ServletActionContext.getResponse();
                 response.sendRedirect("UserGroup.jsp");

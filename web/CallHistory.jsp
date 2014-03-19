@@ -1,7 +1,9 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_phone_profile" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -87,6 +89,7 @@
                         <select id="year" style="width: 100px">
                             <option value="2012">2012年</option>
                             <option value="2013">2013年</option>
+                            <option value="2014" selected>2014年</option>
                         </select>&nbsp;
                         月份：
                         <select id="month" style="width: 80px">
@@ -106,7 +109,9 @@
                         <select style="width: 100px" id="callType">
                             <option value="null">无</option>
                             <%
-                                List li = new BillSysDAOImpl().getAllFeeProfile();
+                                ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+                                BillSysDAO billSysDAO = ctx.getBean("billService",BillSysDAO.class);
+                                List li = billSysDAO.getAllFeeProfile();
                                 gtao_phone_profile profile = new gtao_phone_profile();
                                 Iterator it = li.iterator();
                                 while(it.hasNext()){

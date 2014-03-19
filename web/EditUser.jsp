@@ -1,11 +1,13 @@
 <%@ page import="com.bill.bean.TBL_USERSINFO" %>
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_Phone_User" %>
 <%@ page import="com.bill.pojo.gtao_phone_group" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.bill.tool.BillSysTool" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <%@taglib prefix="s" uri="/struts-tags" %>
@@ -76,7 +78,8 @@
     </ul>
 </div>
 <%
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billSysDAO = ctx.getBean("billService",BillSysDAO.class);
     String longNum = request.getParameter("phoneNum");
     int id = 0;
     String userid = request.getParameter("userid");
@@ -87,7 +90,7 @@
     gtao_Phone_User user = new gtao_Phone_User();
     user.setLongNum(longNum);
     user.setUserid(userid);
-    li = impl.getUserByNum(user);
+    li = billSysDAO.getUserByNum(user);
     Iterator it = li.iterator();
     gtao_Phone_User userTemp = null;
     BillSysTool tool = new BillSysTool();
@@ -114,7 +117,7 @@
     }
 
     //获取用户信息
-    List userInfoList = impl.getUserInfoFromRadius(userIdText);
+    List userInfoList = billSysDAO.getUserInfoFromRadius(userIdText);
     TBL_USERSINFO userinfo = null;
     Iterator userInfoIter = userInfoList.iterator();
     String address = "",username="",tuserid="",usercertno="",usermac="",userphone="";
@@ -130,7 +133,7 @@
             userphone = userinfo.getSTELE().replaceAll(";","");
         }
     }
-    address = new String(impl.getUserAddress(userIdText).getBytes("ISO-8859-1"),"GBK");
+    address = new String(billSysDAO.getUserAddress(userIdText).getBytes("ISO-8859-1"),"GBK");
 %>
 <div class="row-fluid sortable ui-sortable">
 <div class="box span12" style="">
@@ -226,7 +229,7 @@
             <div class="controls">
                 <%
                     List groupList = new ArrayList();
-                    groupList = new BillSysDAOImpl().getAllGroup();
+                    groupList = billSysDAO.getAllGroup();
                     gtao_phone_group group = new gtao_phone_group();
                     Iterator groupIterator = groupList.iterator();
                 %>

@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
@@ -19,7 +19,15 @@ public class ChangePassAction extends ActionSupport {
     private String newpass1;
     private String newpass2;
     private String uid;
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getUid() {
         return uid;
@@ -62,8 +70,8 @@ public class ChangePassAction extends ActionSupport {
             out.print("error");
         }
         else {
-            if(impl.checkPassword(uid,oldpass)){
-                if(impl.changePass(newpass1,uid)){
+            if(billService.checkPassword(uid,oldpass)){
+                if(billService.changePass(newpass1,uid)){
                     out.print("success");
                 }
             }

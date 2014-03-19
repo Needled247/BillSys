@@ -1,11 +1,13 @@
 <%@ page import="com.bill.bean.TBL_USERSINFO" %>
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_Phone_bc_sale" %>
 <%@ page import="com.bill.pojo.gtao_phone_group" %>
 <%@ page import="com.bill.tool.BillSysTool" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -84,7 +86,9 @@
     sale.setUserId(userId);
     sale.setMobile(mobile);
     List li = new ArrayList();
-    li = new BillSysDAOImpl().getSaleApplyDetail(sale,tbl);
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+    li = billService.getSaleApplyDetail(sale,tbl);
     Iterator it = li.iterator();
     String longNumText="",userIdText="",mobileText="",shortNumText="",AreaText="",IpText="",Money="",Pay="",vlan="",
     Installer="",InstallTime="",gate="";
@@ -98,8 +102,7 @@
         userIdText = tool.NullStrFormatter(saleText.getUserId());
         mobileText = tool.NullStrFormatter(saleText.getMobile());
         shortNumText = tool.NullStrFormatter(saleText.getShortNum());
-        TimeText = saleText.getUpTime().toString();
-        newTime = TimeText.substring(0,TimeText.indexOf(":",1)-3);
+        newTime = saleText.getUpTime().toString();
         IpText = tool.NullStrFormatter(saleText.getIp());
         Money = tool.NullStrFormatter(saleText.getMoney());
         Pay = tool.NullStrFormatter(saleText.getIsPay());
@@ -110,7 +113,7 @@
     }
 
     //获取用户信息
-    List userInfoList = new BillSysDAOImpl().getUserInfoFromRadius(userId);
+    List userInfoList = billService.getUserInfoFromRadius(userId);
     TBL_USERSINFO userinfo = null;
     Iterator userInfoIter = userInfoList.iterator();
     String address = "",username="",userid="",usercertno="",usermac="",userphone="";
@@ -252,7 +255,7 @@
 
         <%
             List groupList = new ArrayList();
-            groupList = new BillSysDAOImpl().getAllGroup();
+            groupList = billService.getAllGroup();
             Iterator groupIterator = groupList.iterator();
             gtao_phone_group group = new gtao_phone_group();
         %>

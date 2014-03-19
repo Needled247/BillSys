@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.BillSys_User;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
@@ -21,6 +21,15 @@ public class loginCheck extends ActionSupport{
     private String password;
     private String result;
     private InputStream inputStream;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getResult() {
         return result;
@@ -69,7 +78,7 @@ public class loginCheck extends ActionSupport{
         BillSys_User user = new BillSys_User();
         user.setUsername(username);
         user.setPassword(password);
-        String level = new BillSysDAOImpl().loginCheck(user);
+        String level = billService.loginCheck(user);
         if(level!=null){
             HttpServletRequest request = ServletActionContext.getRequest();
             request.getSession().setAttribute("uid",username);
@@ -78,7 +87,7 @@ public class loginCheck extends ActionSupport{
             return  SUCCESS;
         }
         else{
-            inputStream = new ByteArrayInputStream("error".getBytes());
+            inputStream = new ByteArrayInputStream("-1".getBytes());
             return SUCCESS;
         }
     }

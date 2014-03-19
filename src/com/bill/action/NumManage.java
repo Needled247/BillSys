@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.gtao_Phone_bc_sale;
 import com.bill.pojo.gtao_phone_view;
 import com.opensymphony.xwork2.ActionSupport;
@@ -22,7 +22,15 @@ public class NumManage extends ActionSupport {
     private String area;
     private String phoneNum;
     private String status;
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getStatus() {
         return status;
@@ -70,7 +78,7 @@ public class NumManage extends ActionSupport {
         StringBuilder sb = new StringBuilder();
         if(type.equals("area")){
             //µÿ”Ú≤È—Ø JSON
-            li = impl.SearchByArea(area,status);
+            li = billService.SearchByArea(area,status);
             if(area.contains("sale")){
                 gtao_Phone_bc_sale sale = null;
                 Iterator saleIter = li.iterator();
@@ -114,7 +122,7 @@ public class NumManage extends ActionSupport {
         }
         else if(type.equals("num")||type=="num"){
             //∫≈¬Î≤È—Ø
-            Map map = impl.SearchByNum(phoneNum);
+            Map map = billService.SearchByNum(phoneNum);
             String key = "";
             List value = new ArrayList();
             sb.append("[");
@@ -168,7 +176,6 @@ public class NumManage extends ActionSupport {
             }
             sb.append("]");
         }
-        System.out.println(sb);
         out.println(sb);
         out.flush();
         out.close();

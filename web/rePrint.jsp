@@ -1,4 +1,3 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_phone_group" %>
 <%@ page import="com.bill.pojo.gtao_phone_view" %>
 <%@ page import="com.bill.tool.BillSysTool" %>
@@ -7,6 +6,9 @@
 <%@ page import="java.util.List" %>
 <%@include file="Validate.jsp"%>
 <%@ page import="com.bill.bean.TBL_USERSINFO" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -78,11 +80,13 @@
 <%
     String longNum = request.getParameter("longNum");
     String userId = request.getParameter("account");
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
     gtao_phone_view view = new gtao_phone_view();
     view.setLongNum(longNum);
     view.setUserId(userId);
     List li = new ArrayList();
-    li = new BillSysDAOImpl().getApplyDetail(view);
+    li = billService.getApplyDetail(view);
     Iterator it = li.iterator();
     String longNumText="",userIdText="",mobileText="",shortNumText="",AreaText="",IpText="",tbl="",
     installer="",installtime="",vlan="",gate="";
@@ -107,7 +111,7 @@
         gate = viewText.getGate();
     }
     //获取用户信息
-    List userInfoList = new BillSysDAOImpl().getUserInfoFromRadius(userId);
+    List userInfoList = billService.getUserInfoFromRadius(userId);
     TBL_USERSINFO userinfo = null;
     Iterator userInfoIter = userInfoList.iterator();
     String address = "",username="",userid="",usercertno="",usermac="",userphone="";
@@ -233,7 +237,7 @@
         </div>
         <%
             List groupList = new ArrayList();
-            groupList = new BillSysDAOImpl().getAllGroup();
+            groupList = billService.getAllGroup();
             Iterator groupIterator = groupList.iterator();
             gtao_phone_group group = new gtao_phone_group();
         %>

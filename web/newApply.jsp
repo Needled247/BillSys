@@ -1,8 +1,10 @@
 <%@ page import="com.bill.pojo.gtao_phone_view" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.tool.BillSysTool" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -90,15 +92,17 @@
     <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 20%">²Ù×÷</th>
 </tr>
 </thead>
-    <%List li = new BillSysDAOImpl().getApplyList();
+    <%
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+        List li = billService.getApplyList();
         Iterator it = li.iterator();
         gtao_phone_view view = null;%>
 <tbody role="alert" aria-live="polite" aria-relevant="all">
     <%int flag = 2;
         while (it.hasNext()){
             view = (gtao_phone_view)it.next();
-            String time = view.getUpTime().toString();
-            String newTime = time.substring(0,time.indexOf(":",1)-3);
+            String newTime = view.getUpTime().toString();
             if(flag%2==0){%>
     <tr class="odd">
     <% }else {%>

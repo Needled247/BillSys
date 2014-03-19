@@ -1,7 +1,9 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_phone_profile" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -72,7 +74,9 @@
     </ul>
 </div>
 <%
-    List list = new BillSysDAOImpl().getAllFeeProfile();
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+    List list = billService.getAllFeeProfile();
     String userGroup = request.getParameter("group");
 %>
 <div class="row-fluid sortable ui-sortable">

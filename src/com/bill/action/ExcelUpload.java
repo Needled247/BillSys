@@ -58,7 +58,6 @@ public class ExcelUpload extends ActionSupport {
     public String execute() throws Exception {
         String realPath = ServletActionContext.getServletContext().getRealPath("/upload");
         String filePath = realPath+"\\"+fileInputFileName;
-        System.out.println(filePath);
         HttpServletResponse response = ServletActionContext.getResponse();
         response.setContentType("text/html;charset=GBK");
         PrintWriter out = response.getWriter();
@@ -70,7 +69,6 @@ public class ExcelUpload extends ActionSupport {
             FileUtils.copyFile(fileInput, destFile);
             int insNum = new InsertExlTool().insertDB(filePath,InsArea);
             if(insNum>0){
-                System.out.println(insNum);
                 response.sendRedirect("NumManage.jsp?upload=ok");
             }
             else {

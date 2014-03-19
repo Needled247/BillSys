@@ -1,6 +1,6 @@
 package com.bill.tool;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.gtao_phone_celue;
 
 import java.util.ArrayList;
@@ -15,7 +15,12 @@ import java.util.List;
  * 计费管理工具类，过滤9500话单计算自定义费率。
  */
 public class BillingManager {
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
+
     /*
     ！----------------------------------单用户话单生成-------------------------------!
     1、要得到用户一次通话的费率，需要的第一个参数是用户的长号码或账号ACCOUNT，
@@ -89,10 +94,10 @@ public class BillingManager {
     public String Charge(short CallAttribute,String userGroup,int minute,Date StartTime){
         String charge = "";
         //先拿到用户组的计费策略
-        String groupTbl = impl.getTblNameByGroupName(userGroup);
+        String groupTbl = billService.getTblNameByGroupName(userGroup);
         //表名+属性作为参数查询计费策略，存到BEAN里
         List li = new ArrayList();
-        li = impl.getCelueBean(groupTbl,CallAttribute);
+        li = billService.getCelueBean(groupTbl,CallAttribute);
         gtao_phone_celue celue = null;
         BillSysTool tool  = new BillSysTool();
         Iterator it = li.iterator();

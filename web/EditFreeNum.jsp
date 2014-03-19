@@ -3,6 +3,9 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -78,7 +81,9 @@
     String userIdText="",mobileText="",phoneIpText="",vlanText="",longNumText="",
             shortNumText="",itimeText="",tblName="",isHandle="",ipText="",HandleText="",gate="";
     List li = new ArrayList();
-    li = new BillSysDAOImpl().getAreaInfoByNum(tbl,longNum);
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billSysDAO = ctx.getBean("billService",BillSysDAO.class);
+    li = billSysDAO.getAreaInfoByNum(tbl,longNum);
     Iterator it = li.iterator();
     gtao_phone_view view = null;
     while (it.hasNext()){

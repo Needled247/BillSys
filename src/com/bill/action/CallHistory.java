@@ -1,7 +1,7 @@
 package com.bill.action;
 
 import com.bill.bean.tbl_billInfo;
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.tool.BillSysTool;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
@@ -30,6 +30,15 @@ public class CallHistory extends ActionSupport {
     private String datefrom;
     private String dateto;
     private String longNum2;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getDatefrom() {
         return datefrom;
@@ -107,7 +116,7 @@ public class CallHistory extends ActionSupport {
             response.setContentType("text/json;charset=GBK");
             PrintWriter out = response.getWriter();
             List li = new ArrayList();
-            li = new BillSysDAOImpl().getCallHistoryByMonth(dateStr,new BillSysTool().getToday());
+            li = billService.getCallHistoryByMonth(dateStr,new BillSysTool().getToday());
             tbl_billInfo bill = new tbl_billInfo();
             Iterator it = li.iterator();
             StringBuilder sb = new StringBuilder();
@@ -142,7 +151,7 @@ public class CallHistory extends ActionSupport {
             response.setContentType("text/json;charset=GBK");
             PrintWriter out = response.getWriter();
             List li = new ArrayList();
-            li = new BillSysDAOImpl().getCallHistory(dateStr,phoneNum,callType);
+            li = billService.getCallHistory(dateStr,phoneNum,callType);
             request.getSession().setAttribute("bill_month_list",li);
             tbl_billInfo info = new tbl_billInfo();
             Iterator it = li.iterator();
@@ -177,7 +186,7 @@ public class CallHistory extends ActionSupport {
             response.setContentType("text/json;charset=GBK");
             PrintWriter out = response.getWriter();
             StringBuilder sb = new StringBuilder();
-            List li = new BillSysDAOImpl().getCallHistoryByDate(datefrom,dateto,longNum2);
+            List li = billService.getCallHistoryByDate(datefrom,dateto,longNum2);
             request.getSession().setAttribute("bill_date_list",li);
             Iterator it = li.iterator();
             tbl_billInfo bill = new tbl_billInfo();

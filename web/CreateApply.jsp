@@ -1,4 +1,3 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_Phone_bc_sale" %>
 <%@ page import="com.bill.pojo.gtao_phone_group" %>
 <%@ page import="com.bill.pojo.gtao_phone_view" %>
@@ -6,6 +5,9 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -79,7 +81,9 @@
     String longNum = request.getParameter("pNum");
     String table = request.getParameter("tbl");
     List li = new ArrayList();
-    li = new BillSysDAOImpl().getAreaInfoByNum(table,longNum);
+    ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+    BillSysDAO billSysDAO = ctx.getBean("billService",BillSysDAO.class);
+    li = billSysDAO.getAreaInfoByNum(table,longNum);
     Iterator it = li.iterator();
     String longNumText="",userIdText="",mobileText="",shortNumText="",AreaText="",IpText="",tbl="",
     installer="",installtime="",vlan="",gate="",money="";
@@ -87,7 +91,6 @@
     gtao_phone_view viewText = null;
     gtao_Phone_bc_sale sale = null;
     BillSysTool tool = new BillSysTool();
-    String newTime = "";
     while (it.hasNext()){
         if(table.contains("sale")){
             sale = (gtao_Phone_bc_sale)it.next();
@@ -97,7 +100,6 @@
             shortNumText = tool.NullStrFormatter(sale.getShortNum());
             AreaText = tool.NullStrFormatter(sale.getIpAdd());
             TimeText = sale.getUpTime().toString();
-            newTime = TimeText.substring(0,TimeText.indexOf(":",1)-3);
             IpText = tool.NullStrFormatter(sale.getIp());
             vlan = tool.NullStrFormatter(sale.getVlan());
             installer = tool.NullStrFormatter(sale.getInstaller());
@@ -114,7 +116,6 @@
             shortNumText = tool.NullStrFormatter(viewText.getShortNum());
             AreaText = tool.NullStrFormatter(viewText.getIpAdd());
             TimeText = viewText.getUpTime().toString();
-            newTime = TimeText.substring(0,TimeText.indexOf(":",1)-3);
             IpText = tool.NullStrFormatter(viewText.getIp());
             vlan = tool.NullStrFormatter(viewText.getVlan());
             installer = tool.NullStrFormatter(viewText.getInstaller());
@@ -232,7 +233,7 @@
         </div>
         <%
             List groupList = new ArrayList();
-            groupList = new BillSysDAOImpl().getAllGroup();
+            groupList = billSysDAO.getAllGroup();
             Iterator groupIterator = groupList.iterator();
             gtao_phone_group group = new gtao_phone_group();
         %>

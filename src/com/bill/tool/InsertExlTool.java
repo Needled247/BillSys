@@ -7,16 +7,14 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
-import org.hibernate.*;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementSetter;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,15 +25,17 @@ import java.util.List;
  */
 
 public class InsertExlTool {
-    private static ServiceRegistry serviceRegistry;
-    private static SessionFactory sessionFactory;
+    private JdbcTemplate jdbcTemplate;
+
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     public int insertDB(String filePath,String tbl){
         int flag = 0;
         int InsNum = 0;//插入的条数。
         String fileName = filePath.substring(filePath.lastIndexOf("\\")+1,filePath.lastIndexOf("."));
         if((fileName.equals("sale")||fileName=="sale")&&(tbl.contains("sale")))
-        System.out.println(fileName);
         try {
             //文件流指向excel文件
             FileInputStream fin=new FileInputStream(filePath);
@@ -44,12 +44,9 @@ public class InsertExlTool {
             HSSFRow row=null;//对应excel的行
             HSSFCell cell=null;//对应excel的列
             int totalRow=sheet.getLastRowNum();//得到excel的总记录条数
-            //hibernate
-            sessionFactory = configureSessionFactory();
+            //jdbcTemplate
             if(tbl.contains("sale")){
                 if(fileName.equals("sale")||fileName=="sale"){
-                    Session session = sessionFactory.openSession();
-                    Transaction transaction = session.beginTransaction();
                     gtao_Phone_bc_sale sale = null;
                     for(int i=1;i<=totalRow;i++){
                         sale = new gtao_Phone_bc_sale();
@@ -80,36 +77,25 @@ public class InsertExlTool {
                         }
                         //检查
                         String sql = "select count(*) from "+tbl+" where longNum=? and shortNum=? and ip=? and money=? and vlan=?";
-                        Query query = session.createSQLQuery(sql);
-                        query.setParameter(0,sale.getLongNum());
-                        query.setParameter(1,sale.getShortNum());
-                        query.setParameter(2,sale.getIp());
-                        query.setParameter(3,sale.getMoney());
-                        query.setParameter(4,sale.getVlan());
-                        List li = query.list();
-                        Iterator it = li.iterator();
-                        while (it.hasNext()){
-                            int x = (Integer)it.next();
-                            if(x==0){
-                                //插入
-                                sql = "insert into "+tbl+"(longNum,shortNum,ip,money,vlan,gate) values (?,?,?,?,?,?)";
-                                query = session.createSQLQuery(sql);
-                                query.setParameter(0,sale.getLongNum());
-                                query.setParameter(1,sale.getShortNum());
-                                query.setParameter(2,sale.getIp());
-                                query.setParameter(3,sale.getMoney());
-                                query.setParameter(4,sale.getVlan());
-                                query.setParameter(5, sale.getGate());
-                                InsNum+=query.executeUpdate();
-                                if(i%30==0){
-                                    session.flush();
-                                    session.clear();
+                        Object[] param = {sale.getLongNum(),sale.getShortNum(),sale.getIp(),sale.getMoney(),sale.getVlan()};
+                        int count = jdbcTemplate.queryForInt(sql,param);
+                        if(count==0){
+                            //插入
+                            sql = "insert into "+tbl+"(longNum,shortNum,ip,money,vlan,gate) values (?,?,?,?,?,?)";
+                            final gtao_Phone_bc_sale finalSale = sale;
+                            InsNum+=jdbcTemplate.update(sql, new PreparedStatementSetter() {
+                                @Override
+                                public void setValues(PreparedStatement pstmt) throws SQLException {
+                                    pstmt.setString(1, finalSale.getLongNum());
+                                    pstmt.setString(2, finalSale.getShortNum());
+                                    pstmt.setString(3, finalSale.getIp());
+                                    pstmt.setString(4, finalSale.getMoney());
+                                    pstmt.setString(5, finalSale.getVlan());
+                                    pstmt.setString(6, finalSale.getGate());
                                 }
-                            }
+                            });
                         }
                     }
-                    transaction.commit();
-                    session.close();
                     fin.close();
               }
                 else {
@@ -119,9 +105,6 @@ public class InsertExlTool {
             }
             else {
                 if((fileName.equals("free")||fileName=="free")){
-                    Session session = sessionFactory.openSession();
-                    Transaction transaction = session.beginTransaction();
-
                     gtao_phone_view view = null;
                     for(int i=1;i<=totalRow;i++){
                         view = new gtao_phone_view();
@@ -148,35 +131,23 @@ public class InsertExlTool {
                         }
                         //检查
                         String sql = "select count(*) from "+tbl+" where longNum=? and shortNum=? and ip=? and vlan=?";
-                        Query query = session.createSQLQuery(sql);
-                        query.setParameter(0,view.getLongNum());
-                        query.setParameter(1,view.getShortNum());
-                        query.setParameter(2,view.getIp());
-                        query.setParameter(3,view.getVlan());
-                        List li = query.list();
-                        Iterator it = li.iterator();
-                        while (it.hasNext()){
-                            int x = (Integer)it.next();
-                            if(x==0){
-                                //插入
-                                query = null;
-                                sql = "insert into "+tbl+"(longNum,shortNum,ip,vlan,gate) values (?,?,?,?,?)";
-                                query = session.createSQLQuery(sql);
-                                query.setParameter(0,view.getLongNum());
-                                query.setParameter(1,view.getShortNum());
-                                query.setParameter(2,view.getIp());
-                                query.setParameter(3,view.getVlan());
-                                query.setParameter(4,view.getGate());
-                                InsNum+=query.executeUpdate();
-                                if(i%30==0){
-                                    session.flush();
-                                    session.clear();
+                        Object[] param = {view.getLongNum(),view.getShortNum(),view.getIp(),view.getVlan()};
+                        int count = jdbcTemplate.queryForInt(sql,param);
+                        if(count==0){
+                            sql = "insert into "+tbl+"(longNum,shortNum,ip,vlan,gate) values (?,?,?,?,?)";
+                            final gtao_phone_view finalView = view;
+                            InsNum += jdbcTemplate.update(sql,new PreparedStatementSetter() {
+                                @Override
+                                public void setValues(PreparedStatement pstmt) throws SQLException {
+                                    pstmt.setString(1, finalView.getLongNum());
+                                    pstmt.setString(2, finalView.getShortNum());
+                                    pstmt.setString(3, finalView.getIp());
+                                    pstmt.setString(4, finalView.getVlan());
+                                    pstmt.setString(5, finalView.getGate());
                                 }
-                            }
+                            });
                         }
                     }
-                    transaction.commit();
-                    session.close();
                     fin.close();
                  }
                   else {
@@ -191,18 +162,7 @@ public class InsertExlTool {
         catch(IOException ex){
             ex.printStackTrace();
         }
-        finally {
-            sessionFactory.close();
-        }
         flag = InsNum;
         return flag;
-    }
-
-    private static SessionFactory configureSessionFactory() throws HibernateException {
-        Configuration configuration = new Configuration();
-        configuration.configure();
-        serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
-        sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-        return sessionFactory;
     }
 }

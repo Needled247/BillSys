@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
@@ -19,11 +19,19 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class MonthlyAction extends ActionSupport {
-    BillSysDAOImpl impl = new BillSysDAOImpl();
     private String userClass;
     private String type;
     private String year;
     private String month;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getUserClass() {
         return userClass;
@@ -74,7 +82,7 @@ public class MonthlyAction extends ActionSupport {
         PrintWriter out = response.getWriter();
         String tbl = "tbl_billInfo"+year+month;
         List li = new ArrayList();
-        li = impl.getOverTimeUser(tbl,userClass);
+        li = billService.getOverTimeUser(tbl,userClass);
         if(!li.isEmpty()){
             Iterator it = li.iterator();
         }

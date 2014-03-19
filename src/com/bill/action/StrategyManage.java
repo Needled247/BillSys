@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.gtao_phone_celue;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
@@ -40,6 +40,15 @@ public class StrategyManage extends ActionSupport {
     private String specialfee2;
     private String specialfee3;
     private int id;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getUserGroup() {
         return userGroup;
@@ -231,8 +240,8 @@ public class StrategyManage extends ActionSupport {
          */
         if(type.equals("search")||type=="search"){
             List li = new ArrayList();
-            String tblName = new BillSysDAOImpl().getTblNameByGroupId(userGroup);
-            li = new BillSysDAOImpl().getAllCelue(tblName);
+            String tblName = billService.getTblNameByGroupId(userGroup);
+            li = billService.getAllCelue(tblName);
             gtao_phone_celue celue = new gtao_phone_celue();
             Iterator it = li.iterator();
             sb.append("[");
@@ -275,7 +284,7 @@ public class StrategyManage extends ActionSupport {
             celue.setSPECIALTIMEFEE1(specialfee1);
             celue.setSPECIALTIMEFEE2(specialfee2);
             celue.setSPECIALTIMEFEE3(specialfee3);
-            boolean flag = new BillSysDAOImpl().updateStrategyInfo(celue,userGroup);
+            boolean flag = billService.updateStrategyInfo(celue,userGroup);
             response.setContentType("text/html;charset=GBK");
             out = response.getWriter();
             if (flag){
@@ -310,7 +319,7 @@ public class StrategyManage extends ActionSupport {
             celue.setSPECIALTIMEFEE2(specialfee2);
             celue.setSPECIALTIMEFEE3(specialfee3);
             //调用dao方法保存
-            boolean flag = new BillSysDAOImpl().saveStrategyInfo(celue,userGroup);
+            boolean flag = billService.saveStrategyInfo(celue,userGroup);
             response.setContentType("text/html;charset=GBK");
             out = response.getWriter();
             if (flag){
@@ -324,7 +333,7 @@ public class StrategyManage extends ActionSupport {
          * type==del,删除计费策略
          */
         if(type.equals("del")||type=="del"){
-            boolean flag = new BillSysDAOImpl().deleteStrategyInfo(prefix,userGroup);
+            boolean flag = billService.deleteStrategyInfo(prefix,userGroup);
             if(flag){
                 response.sendRedirect("UserGroup.jsp");
             }

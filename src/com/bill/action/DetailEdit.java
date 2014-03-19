@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.*;
 import com.bill.tool.BillSysTool;
 import com.bill.tool.SshTool;
@@ -44,7 +44,15 @@ public class DetailEdit extends ActionSupport {
     private String Balance;
     private String opentime;
     private String endtime;
-    BillSysDAOImpl impl = new BillSysDAOImpl();
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getOpentime() {
         return opentime;
@@ -294,7 +302,7 @@ public class DetailEdit extends ActionSupport {
                     sale.setInstallTime(installTime);
                     sale.setGate(gate);
                     sale.setIsPay(isPay);
-                    this.impl.createAccount(null,sale,tbl,phoneNum);
+                    this.billService.createAccount(null,sale,tbl,phoneNum);
                     if(this.CreateUser("已开通")){
                         out.print("success");
                     }
@@ -320,7 +328,7 @@ public class DetailEdit extends ActionSupport {
                     sale.setInstallTime(installTime);
                     sale.setGate(gate);
                     sale.setIsPay(isPay);
-                    this.impl.createAccount(null,sale,tbl,phoneNum);
+                    this.billService.createAccount(null,sale,tbl,phoneNum);
                     if(this.CreateUser("未开通")){
                         out.print("success");
                     }
@@ -346,7 +354,7 @@ public class DetailEdit extends ActionSupport {
                     view.setInstaller(installer);
                     view.setInstallTime(installTime);
                     view.setGate(gate);
-                    this.impl.createAccount(view,null,tbl,phoneNum);
+                    this.billService.createAccount(view,null,tbl,phoneNum);
                     if(this.CreateUser("已开通")){
                         out.print("success");
                     }
@@ -372,7 +380,7 @@ public class DetailEdit extends ActionSupport {
                     view.setInstaller(installer);
                     view.setInstallTime(installTime);
                     view.setGate(gate);
-                    this.impl.createAccount(view,null,tbl,phoneNum);
+                    this.billService.createAccount(view,null,tbl,phoneNum);
                     if(this.CreateUser("未开通")){
                         out.print("success");
                     }
@@ -409,13 +417,13 @@ public class DetailEdit extends ActionSupport {
         user.setBalance(Balance);
         user.setEmail(opentime); //开通时间
         user.setMaturityTime(endtime);
-        if(impl.userRegister(user)){
+        if(billService.userRegister(user)){
             BillSys_User userInfo = new BillSys_User();
             userInfo.setUsername(userid);
             userInfo.setPassword(phoneNum);
             userInfo.setLevel(2);
             //addUser
-            impl.addUser(userInfo);
+            billService.addUser(userInfo);
             flag = true;
         }
         else {
@@ -442,7 +450,7 @@ public class DetailEdit extends ActionSupport {
         view.setInstallTime(installTime);
         view.setGate(gate);
         String tbl_name = this.AreaSelect(ipadd);
-        flag = impl.editApplyDetail(view,tbl_name,finalNum,finalUser);
+        flag = billService.editApplyDetail(view,tbl_name,finalNum,finalUser);
         if(flag){
             gtao_Phone_User user = new gtao_Phone_User();
             user.setLongNum(phoneNum);
@@ -461,13 +469,13 @@ public class DetailEdit extends ActionSupport {
             user.setEmail(opentime);  //开通时间
             user.setStatus(status);
             try{
-                flag = impl.userRegister(user);
+                flag = billService.userRegister(user);
                 BillSys_User userInfo = new BillSys_User();
                 userInfo.setUsername(userid);
                 userInfo.setPassword(phoneNum);
                 userInfo.setLevel(2);
                 //addUser
-                flag = impl.addUser(userInfo);
+                flag = billService.addUser(userInfo);
             }
             catch (HibernateException e){
                 e.printStackTrace();
@@ -485,7 +493,7 @@ public class DetailEdit extends ActionSupport {
     public boolean initDetailApply(){
         boolean flag = false;
         String tbl_name = this.AreaSelect(ipadd);
-        flag = impl.initApplyDetail(tbl_name,finalNum,finalUser);
+        flag = billService.initApplyDetail(tbl_name,finalNum,finalUser);
         return flag;
     }
 
@@ -498,7 +506,7 @@ public class DetailEdit extends ActionSupport {
         String tbl_name = "";
         String ipStr = ipadd.substring(0, ipadd.indexOf(".",ipadd.indexOf(".")+1 ));
         List<gtao_Phone_MIME> mimeLi = new ArrayList<gtao_Phone_MIME>();
-        mimeLi = impl.getAreaMime();
+        mimeLi = billService.getAreaMime();
         Iterator<gtao_Phone_MIME> it = mimeLi.iterator();
         for(gtao_Phone_MIME gpm:mimeLi){
             if(ipStr.matches(gpm.getIpregex())){

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="jdbcTemplateBmu" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="BMU"/>
+    </bean>
+    <bean id="jdbcTemplateRadius" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="RADIUS"/>
+    </bean>
+    <bean id="billService" class="com.bill.dao.BillSysDAOImpl">
+        <property name="jdbcTemplateBmu" ref="jdbcTemplateBmu"/>
+        <property name="jdbcTemplateRadius" ref="jdbcTemplateRadius"/>
+    </bean>
+    <bean id="InsertExlTool" class="com.bill.tool.InsertExlTool">
+        <property name="jdbcTemplate" ref="jdbcTemplateBmu"/>
+    </bean>
+    <bean id="billProxy" class="com.bill.dao.BillDaoProxy">
+        <property name="billSysDAO" ref="billService"/>
+    </bean>
+    <!--将dao注入计费过滤器BillingManager-->
+    <bean id="BillingManager" class="com.bill.tool.BillingManager">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <!--将dao注入Quartz jobs-->
+    <bean id="TimmingOpen" class="com.bill.Job.TimmingOpen">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <!--Struts 2 Action 注入 DAO-->
+    <bean id="CallHistory" class="com.bill.action.CallHistory" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="ChangePassAction" class="com.bill.action.ChangePassAction" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="DetailEdit" class="com.bill.action.DetailEdit" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="EditNumInfo" class="com.bill.action.EditNumInfo" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="EditUser" class="com.bill.action.EditUser" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="loginCheck" class="com.bill.action.loginCheck" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="MonthlyAction" class="com.bill.action.MonthlyAction" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="NumManage" class="com.bill.action.NumManage" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="SaleDetailEdit" class="com.bill.action.SaleDetailEdit" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="StrategyManage" class="com.bill.action.StrategyManage" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="UserCallAction" class="com.bill.action.UserCallAction" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="ViewUserAction" class="com.bill.action.ViewUserAction" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <bean id="UserGroup" class="com.bill.action.UserGroup" scope="prototype">
+        <property name="billService" ref="billService"/>
+    </bean>
+    <!--Hibernate 数据源 SQL SERVER-->
+    <bean id="BMU" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="url" value="jdbc:sqlserver://10.1.0.234:1433;DatabaseName=BMU"/>
+        <property name="username" value="bill"/>
+        <property name="password" value="gtaoadmin"/>
+    </bean>
+    <!--Hibernate 数据源 ORACLE-->
+    <bean id="RADIUS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@10.0.1.128:1521:radius"/>
+        <property name="username" value="mydradius"/>
+        <property name="password" value="mydradius"/>
+    </bean>
+</beans>

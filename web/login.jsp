@@ -151,14 +151,14 @@
             return false;
         }
         if(flag){
-            $.post("checkLogin.action",{username:username,password:password},function(data){
+            $.post("/checkLogin",{username:username,password:password},function(data){
                     if(data=="1"){
                         window.location.href="newApply.jsp";
                     }
                     else if(data=="2"){
                         window.location.href="UserCallHistory.jsp";
                     }
-                    else if(data=="error"){
+                    else if(data=="-1"){
                         info.html("");
                         info.html("’À∫≈/√‹¬Î¥ÌŒÛ£¨«Î÷ÿ–¬ÃÓ–¥...");
                     }

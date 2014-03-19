@@ -67,4 +67,6 @@ public interface BillSysDAO {
     public List getUserInfoByNum(String longNum);
     public boolean updateUserStatus(String status,int id);
     public List getOverTimeUser(String tbl,String userClass);
+    public List viewUserPage(int start,int length,String key);
+    public int getUserCount(String key);
 }

@@ -1,7 +1,9 @@
-<%@ page import="com.bill.dao.BillSysDAOImpl" %>
 <%@ page import="com.bill.pojo.gtao_Phone_bc_sale" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.springframework.context.ApplicationContext" %>
+<%@ page import="org.springframework.context.support.ClassPathXmlApplicationContext" %>
+<%@ page import="com.bill.dao.BillSysDAO" %>
 <%@include file="Validate.jsp"%>
 <%@page language="java" pageEncoding="GBK" %>
 <!DOCTYPE html>
@@ -90,7 +92,10 @@
     <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 20%">²Ù×÷</th>
 </tr>
 </thead>
-    <%List li = new BillSysDAOImpl().getSaleApplyList();
+    <%
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BillSysDAO billService = ctx.getBean("billService",BillSysDAO.class);
+        List li = billService.getSaleApplyList();
         Iterator it = li.iterator();
         gtao_Phone_bc_sale sale = null;%>
 <tbody role="alert" aria-live="polite" aria-relevant="all">
@@ -99,8 +104,7 @@
         String mark = "";
         while (it.hasNext()){
             sale = (gtao_Phone_bc_sale)it.next();
-            String time = sale.getUpTime().toString();
-            String newTime = time.substring(0,time.indexOf(":",1)-3);
+            String newTime = sale.getUpTime().toString();
             String tbl = sale.getTbl();
             if(sale.getIsPay().equals("0")||sale.getIsPay()=="0"){
                 mark = "Î´Ö§¸¶";

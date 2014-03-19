@@ -1,6 +1,6 @@
 package com.bill.action;
 
-import com.bill.dao.BillSysDAOImpl;
+import com.bill.dao.BillSysDAO;
 import com.bill.pojo.gtao_Phone_bc_sale;
 import com.bill.pojo.gtao_phone_view;
 import com.opensymphony.xwork2.ActionSupport;
@@ -28,6 +28,15 @@ public class EditNumInfo extends ActionSupport {
     private String finalNum;
     private String money;
     private String gate;
+    private BillSysDAO billService;
+
+    public BillSysDAO getBillService() {
+        return billService;
+    }
+
+    public void setBillService(BillSysDAO billService) {
+        this.billService = billService;
+    }
 
     public String getGate() {
         return gate;
@@ -119,7 +128,6 @@ public class EditNumInfo extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        BillSysDAOImpl impl = new BillSysDAOImpl();
         boolean flag = false;
         HttpServletResponse response = ServletActionContext.getResponse();
         response.setContentType("text/html;charset=GBK");
@@ -134,7 +142,7 @@ public class EditNumInfo extends ActionSupport {
             view.setIpAdd(phoneIp);
             view.setVlan(vlan);
             view.setGate(gate);
-            flag = impl.editFreeNumInfo(view,tblName, finalNum);
+            flag = billService.editFreeNumInfo(view,tblName, finalNum);
             if(flag){
                 out.print("success");
             }
@@ -144,7 +152,7 @@ public class EditNumInfo extends ActionSupport {
         }
         //Ãâ·ÑÉ¾³ý
         else if(EditType.equals("freeDelete")||EditType=="freeDelete"){
-            flag = impl.delFreeNumInfo(phoneNum,tblName);
+            flag = billService.delFreeNumInfo(phoneNum,tblName);
             if(flag){
                 out.print("success");
             }
@@ -154,7 +162,7 @@ public class EditNumInfo extends ActionSupport {
         }
         //Ãâ·Ñ³õÊ¼»¯
         else if(EditType.equals("freeInit")||EditType=="freeInit"){
-            flag = impl.initFreeNum(phoneNum,tblName);
+            flag = billService.initFreeNum(phoneNum,tblName);
             if(flag){
                 out.print("init_success");
             }
@@ -173,7 +181,7 @@ public class EditNumInfo extends ActionSupport {
             sale.setVlan(vlan);
             sale.setMoney(money);
             sale.setGate(gate);
-            flag = impl.editSaleNumInfo(sale,phoneNum);
+            flag = billService.editSaleNumInfo(sale,phoneNum);
             if(flag){
                 out.print("success");
             }
@@ -183,7 +191,7 @@ public class EditNumInfo extends ActionSupport {
         }
         //¸¶·ÑÉ¾³ý
         else if(EditType.equals("saleDelete")||EditType=="saleDelete"){
-            flag = impl.delSaleNumInfo(phoneNum);
+            flag = billService.delSaleNumInfo(phoneNum);
             if(flag){
                 out.print("success");
             }
